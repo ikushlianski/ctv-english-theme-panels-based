@@ -12,8 +12,8 @@
 ; page at admin/appearance.
 
 screenshot  = screenshot.png
-name        = CTV English theme 2
-description = A theme for the English verison of the en.ctv.by website.
+name        = CTV English theme prod
+description = A production theme for the English verison of the en.ctv.by website.
 
 
 

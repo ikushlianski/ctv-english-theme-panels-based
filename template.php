@@ -7,7 +7,7 @@
  * @see https://drupal.org/node/1728096
  */
 
- function ctvenglishtheme2_preprocess_html(&$variables) {
+ function ctvenglishtheme2prod_preprocess_html(&$variables) {
      drupal_add_css('https://fonts.googleapis.com/css?family=Roboto:400,700', array('type' => 'external'));
  }
 /**
@@ -19,12 +19,12 @@
  *   The name of the template being rendered ("maintenance_page" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function ctvenglishtheme2_preprocess_maintenance_page(&$variables, $hook) {
+function ctvenglishtheme2prod_preprocess_maintenance_page(&$variables, $hook) {
   // When a variable is manipulated or added in preprocess_html or
   // preprocess_page, that same work is probably needed for the maintenance page
   // as well, so we can just re-use those functions to do that work here.
-  ctvenglishtheme2_preprocess_html($variables, $hook);
-  ctvenglishtheme2_preprocess_page($variables, $hook);
+  ctvenglishtheme2prod_preprocess_html($variables, $hook);
+  ctvenglishtheme2prod_preprocess_page($variables, $hook);
 }
 // */
 
@@ -37,7 +37,7 @@ function ctvenglishtheme2_preprocess_maintenance_page(&$variables, $hook) {
  *   The name of the template being rendered ("html" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function ctvenglishtheme2_preprocess_html(&$variables, $hook) {
+function ctvenglishtheme2prod_preprocess_html(&$variables, $hook) {
   $variables['sample_variable'] = t('Lorem ipsum.');
 
   // The body tag's classes are controlled by the $classes_array variable. To
@@ -57,7 +57,7 @@ function ctvenglishtheme2_preprocess_html(&$variables, $hook) {
  *   The name of the template being rendered ("page" in this case.)
  */
 
-function ctvenglishtheme2_preprocess_page(&$variables, $hook) {
+function ctvenglishtheme2prod_preprocess_page(&$variables, $hook) {
   $variables['main_menu_2'] = menu_navigation_links('menu-main-menu-2');
 
 
@@ -73,15 +73,15 @@ function ctvenglishtheme2_preprocess_page(&$variables, $hook) {
  *   The name of the template being rendered ("region" in this case.)
  */
 
-function ctvenglishtheme2_preprocess_region(&$variables, $hook) {
+function ctvenglishtheme2prod_preprocess_region(&$variables, $hook) {
   // Don't use Zen's region--no-wrapper.tpl.php template for sidebars.
-  $function = 'ctvenglishtheme2_preprocess_region__sitemap_nav';
+  $function = 'ctvenglishtheme2prod_preprocess_region__sitemap_nav';
   if (function_exists($function)) {
     $function($variables);
   }
 }
 // */
-function ctvenglishtheme2_preprocess_region__sitemap_nav(&$variables) {
+function ctvenglishtheme2prod_preprocess_region__sitemap_nav(&$variables) {
   $search_form = drupal_get_form('search_form');
   $variables['search_box'] = drupal_render($search_form);
 }
@@ -96,7 +96,7 @@ function ctvenglishtheme2_preprocess_region__sitemap_nav(&$variables) {
  *   The name of the template being rendered ("block" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function ctvenglishtheme2_preprocess_block(&$variables, $hook) {
+function ctvenglishtheme2prod_preprocess_block(&$variables, $hook) {
   // Add a count to all the blocks in the region.
   // $variables['classes_array'][] = 'count-' . $variables['block_id'];
 
@@ -119,11 +119,11 @@ function ctvenglishtheme2_preprocess_block(&$variables, $hook) {
  *   The name of the template being rendered ("node" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function ctvenglishtheme2_preprocess_node(&$variables, $hook) {
+function ctvenglishtheme2prod_preprocess_node(&$variables, $hook) {
   $variables['sample_variable'] = t('Lorem ipsum.');
 
   // Optionally, run node-type-specific preprocess functions, like
-  // ctvenglishtheme2_preprocess_node_page() or ctvenglishtheme2_preprocess_node_story().
+  // ctvenglishtheme2prod_preprocess_node_page() or ctvenglishtheme2prod_preprocess_node_story().
   $function = __FUNCTION__ . '_' . $variables['node']->type;
   if (function_exists($function)) {
     $function($variables, $hook);
@@ -140,7 +140,7 @@ function ctvenglishtheme2_preprocess_node(&$variables, $hook) {
  *   The name of the template being rendered ("comment" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function ctvenglishtheme2_preprocess_comment(&$variables, $hook) {
+function ctvenglishtheme2prod_preprocess_comment(&$variables, $hook) {
   $variables['sample_variable'] = t('Lorem ipsum.');
 }
 // */
