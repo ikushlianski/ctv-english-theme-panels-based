@@ -1,0 +1,50 @@
+.view .view-content {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.view .views-row {
+  flex-basis: 20%;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  margin: 0em 0.5em 0.5em 0em;
+  flex-basis: 200px;
+  background-color: white;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.view img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  display: block;
+  transition: -webkit-filter 0.2s;
+  transition: filter 0.2s;
+  transition: filter 0.2s, -webkit-filter 0.2s;
+  overflow: hidden;
+}
+
+.view img:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
+.view .views-field-title {
+  line-height: normal;
+  padding: 0.3em 0;
+  font-size: 0.95em;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+}
+
+.view .views-field-title a {
+  text-decoration: none;
+  transition: color 0.2s;
+  color: #333;
+  display: block;
+}
+
+/*# sourceMappingURL=related-content.css.map */

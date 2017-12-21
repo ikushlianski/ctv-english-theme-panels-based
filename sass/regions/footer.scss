@@ -1,0 +1,116 @@
+@import 'init/customcolors';
+
+#footer {
+  @media (max-width: 767px) {
+    //width: 100%;
+    margin: 0 -1em;
+  }
+  @media (min-width: 768px) {
+    margin: 0 -1em;
+  }
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #333;
+  // margin: -1em;
+  margin-top: 1em;
+  padding: 1em;
+
+  & .main-menu-footer {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+    padding-top: 0;
+    border-bottom: 1px solid #444;
+    flex-wrap: wrap;
+    // @media (max-width: 500px) {
+    //   flex-direction: column;
+    //   align-items: center;
+    // }
+    & li {
+      @media (max-width: 767px) {
+        padding: 0.5em 0;
+      }
+    }
+    & a {
+      color: lightgrey;
+      font-size: 0.95em;
+      &:hover {
+        color: grey;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.logo-and-branding {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.logo_largeScreens_footer {
+  margin: 0.5em auto;
+  display: table;
+  & img {
+    width: 2.5em;
+  }
+}
+
+.site-logo-footer {
+  position: relative;
+}
+
+.other-footer-content-wrapper {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  & .site-brand-footer {
+    line-height: normal;
+    padding: 1em 0.5em;
+    color: #666;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+    & .subtext {
+
+    }
+    & .company-name {
+      font-size: 1.5em;
+    }
+  }
+  & .other-footer-links-wrapper {
+
+  }
+  & .other-footer-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    @media (max-width: 500px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    & a {
+      color: lightgrey;
+      font-size: 0.85em;
+      &:hover {
+        color: grey;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.site-author {
+  text-align: center;
+  color: #666;
+  font-size: .8em;
+  a {
+    color: #999;
+  }
+}

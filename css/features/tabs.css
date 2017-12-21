@@ -1,0 +1,9 @@
+.nav-tabs {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=tabs.css.map */

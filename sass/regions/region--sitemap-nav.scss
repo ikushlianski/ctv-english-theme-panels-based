@@ -1,0 +1,99 @@
+@import 'init/customcolors';
+
+.region-sitemap-nav {
+    display: none;
+}
+
+@media (min-width: 768px) {
+  .region-sitemap-nav.toggled-on {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    align-self: stretch;
+    background-color: transparentize(black, 0.05);
+    overflow: scroll; // for all browsers
+    //overflow: overlay; // for Chrome, Opera and Safari (better appearance)
+    padding: 1em;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    & .menu-blocks {
+      display: flex;
+      //flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 5em;
+      & .block-menu-block {
+        flex-basis: 33.333333%;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+      }
+      & ul, li {
+        list-style-type: none;
+        list-style-image: none;
+      }
+      & .block__title {
+        display: none;
+      }
+      .menu__item.is-expanded {
+        > a {
+          font-size: 1.4em;
+          font-weight: bold;
+          border-bottom: 1px solid $ctvorange;
+          color: $ctvwhite;
+          text-decoration: none;
+        }
+        .menu {
+          padding: 0em;
+          margin-top: 1em;
+          & a {
+            color: $ctvwhite;
+            text-decoration: none;
+            transition: color 0.2s;
+            &:hover {
+              color: $ctvorange;
+            }
+          }
+        }
+      }
+    }
+
+    & .toggle_largeScreens {
+      position: absolute;
+      top: 0.5em;
+      color: white;
+      right: 1em;
+      cursor: pointer;
+      transition: color 0.2s;
+      &:hover {
+        color: $ctvorange;
+      }
+    }
+  }
+  .searchBox {
+    & .search-form {
+      display: flex;
+      justify-content: center;
+      & .form-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        & input {
+          margin: 0 auto;
+        }
+        & .form-item {
+          display: flex;
+          flex-direction: column;
+
+          & label {
+            display: none;
+          }
+
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import 'init/customcolors';
+
+.advertizerSiteLink {
+  height: 12em!important;
+  @media (max-width: 767px) {
+    display: none!important;
+  }
+}
+
+body {
+  @media (max-width: 767px) {
+    background-color: transparent;
+  }
+}
+
+#page {
+  @media (max-width: 767px) {
+    background-image: none!important;
+    padding-top: 1em;
+    background-color: $ctvmainwrapper!important;
+  }
+}

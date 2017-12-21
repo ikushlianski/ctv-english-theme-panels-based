@@ -1,0 +1,239 @@
+@import 'init/customcolors';
+
+blockquote {
+  padding: 0.5em;
+  //border-bottom: 1px dashed #ef5223;
+  //border-top: 1px dashed #ef5223;
+  border-left: none;
+  // box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.3);
+  margin: 0;
+  font-size: 130%;
+  color: $ctvorange;
+  line-height: normal;
+  & p {
+    margin: 0.5em;
+  }
+}
+
+
+figure {
+  margin: 0 0;
+  // fix for ie11
+  height: 100%;
+}
+figcaption {
+  color: grey;
+  font-size: 0.9em;
+  padding: 0 1em 0;
+  & a {
+    text-decoration: none;
+    &:visited {
+      color: grey;
+    }
+  }
+  text-align: right;
+  @media (min-width: 768px) {
+    padding: 0em;
+  }
+}
+
+.mainImageContainer {
+  width: 100%;
+  // max-width: 768px;
+  position: relative;
+  margin-left: calc(0em);
+  margin-right: calc(-1em);
+  background-size: cover;
+  background-position: center;
+  & img {
+    width: 100%;
+  }
+}
+
+.metaAndImage {
+  margin-left: calc(-1em);
+  margin-right: calc(-1em);
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    margin: 0;
+  }
+}
+.nodeBody {
+  margin-bottom: 2em;
+}
+.nodeCategory {
+  &_largeScreens {
+    display: none;
+  }
+}
+
+.nodeMeta {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0em;
+  margin-bottom: -1em;
+  & .socialButtons {
+    display: flex;
+    & .socialButton {
+      padding: 0.2em;
+      &:first-child {
+        padding-left:0;
+      }
+      &:last-child {
+        padding-right:0;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    padding: 1em 0;
+  }
+}
+
+.nodeVideo {
+  position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+  & iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#page-title {
+  line-height: initial;
+  text-shadow: 1px 0.5px white;
+  color: #333;
+}
+#page-title.title {
+
+}
+.postDate {
+  color: $grey;
+}
+
+.summary {
+  font-weight: bold;
+  font-size: large;
+  line-height: initial;
+  color: darken($grey, 30%);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title_largeScreens {
+  display: none;
+  position: absolute;
+}
+
+
+@media (min-width: 768px) {
+  .mainImageContainer {
+    margin: 0 auto;
+    margin-left: 0em;
+    // flex-basis: 75%;
+    & .nodeCategory_largeScreens {
+      & .field-label {
+        display: none;
+      }
+    }
+  }
+  .mainImage {
+    width: 100%;
+    height: auto;
+  }
+  #main-wrapper {
+    margin: 0 auto;
+    // background-color: white;
+    padding: 1em;
+    padding-bottom: 0;
+    box-shadow: 0px 4px 10px 4px rgba(158, 158, 158, 0.2);
+  }
+  .metaAndImage {
+    display: flex;
+  }
+
+  .nodeCategory {
+    &_largeScreens {
+      display: block;
+      display: initial;
+      position: absolute;
+      top: 2.5em;
+      right: 0;
+      box-shadow: -1px 2px 1px 1px rgba(0, 0, 0, 0.3);
+      background-color: $ctvorange;
+      & a {
+        color: white;
+        padding: 0.2em 1.5em;
+        text-decoration: none;
+        font-weight: bold;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  // .nodeMeta {
+  //   flex-basis: 25%;
+  //   padding: 1em;
+  //   text-align: center;
+  //   flex-direction: column;
+  //   justify-content: flex-start;
+  //   & .socialButtons {
+  //     flex-direction: column;
+  //     & .socialButton {
+  //       &:last-child, &:first-child {
+  //         padding: 0.2em;
+  //       }
+  //     }
+  //   }
+  // }
+  #page-title.title {
+    display: inherit;
+    margin: 1em 0;
+    .page-node & {
+      display: none;
+    }
+  }
+  #main {
+    display: flex;
+  }
+
+  .title_largeScreens {
+    display: block;
+    display: initial;
+    font-size: 1.75em;
+    line-height: normal;
+    bottom: 0em;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0em 0.5em;
+    color: white;
+    text-shadow: 1px 0.5px black;
+    padding: 1rem;
+    // background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7) 30%);
+    & span {
+      font-weight: bold;
+      // background-color: rgba(0, 0, 0, 0.7);
+      padding: 0em;
+      // background-color: rgba(29, 100, 162, 0.7);
+      background-color: $greyTextBackground;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  #main {
+    display: flex;
+  }
+  #main-wrapper {
+    max-width: 1024px;
+  }
+}

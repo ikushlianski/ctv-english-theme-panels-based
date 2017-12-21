@@ -1,0 +1,27 @@
+@import 'init/customcolors';
+
+.carouselView {
+
+  & .views-row {
+    margin: 0!important;
+  }
+  & .views-field-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    // background-color: rgba(78, 114, 154, 0.3)!important;
+    background-color: rgba(0, 0, 0, 0.5)!important;
+    color: white!important;
+    font-weight: bold;
+    padding: 0.3em 2em!important;
+    & a {
+      color: white!important;
+    }
+  }
+  & img {
+    &:hover {
+      filter: none!important;
+    }
+  }
+}

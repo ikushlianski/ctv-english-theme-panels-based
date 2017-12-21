@@ -1,0 +1,11 @@
+.node iframe, .node blockquote {
+  max-width: 100%;
+  margin: 0 auto;
+  display: table;
+}
+
+twitterwidget {
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=embeds.css.map */

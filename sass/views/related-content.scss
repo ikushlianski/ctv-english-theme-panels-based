@@ -1,0 +1,45 @@
+@import 'init/customcolors';
+@import 'init/custom-mixins';
+
+
+
+
+// common appearance of views
+.view {
+  & .view-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  & .views-row {
+    flex-basis: 20%;
+    flex-grow: 1;
+    margin: 0em 0.5em 0.5em 0em;
+    flex-basis: 200px;
+    background-color: white;
+    transition: all 0.2s;
+    position: relative;
+  }
+
+  & img {
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: filter 0.2s;
+    overflow: hidden;    
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+  & .views-field-title {
+    line-height: normal;
+    padding: 0.3em 0;
+    font-size: 0.95em;
+    flex-grow: 1;
+    & a {
+      text-decoration: none;
+      transition: color 0.2s;
+      color: $ctvtext;
+      display: block;
+    }
+  }
+}

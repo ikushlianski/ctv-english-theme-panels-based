@@ -1,0 +1,11 @@
+#content {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  #content {
+    padding: 0 1em;
+  }
+}
+
+/*# sourceMappingURL=content.css.map */

@@ -1,0 +1,18 @@
+.carouselView {
+  & .slide {
+    @media not all, (-webkit-transform-3d) {
+      .carousel-inner>.item.active.left, .carousel-inner>.item.active.right, .carousel-inner>.item.prev {
+        position: absolute;
+        left: 0;
+        -webkit-transform: translate3d(-100%,0,0);
+        transform: translate3d(-100%,0,0);
+      }
+      .carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right {
+        position: relative;
+        left: 0;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+@import 'init/customcolors';
+@import 'init/custom-mixins';
+
+.block__title {
+  margin: 0.5em 0;
+  // background-color: $ctvblue;
+  color: $ctvorange;
+  text-align: center;
+  font-size: 120%;
+  display: inline-block;
+  line-height: normal;
+  font-weight: bold;
+
+  .block-views & {
+    // margin-left: 0em;
+    & a {
+      color: $ctvorange;
+      text-decoration: none;
+      transition: color 0.3s;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.block-views {
+  margin: 0.5em;
+  @include boxShadow;
+  padding: 0.5em 1em;
+  background-color: white;
+  #sidebar-first & {
+    margin: 1em 0;
+    &:first-child {
+      margin-top: 0em;
+      padding-top: 0em;
+      & .block__title {
+        margin-top: 0em;
+      }
+    }
+  }
+  #taxonomy-recommended-items & {
+    box-shadow: none;
+    background-color: transparent;
+  }
+}
+
+#block-views-front-page-two-main-block {
+  padding-bottom: 0em;
+}
+
+.boxShadow--off {
+  box-shadow: none;
+}
+
+
+.relatedLinks {
+  margin: 0.5em 0em;
+  display: inline-block;
+  font-size: 0.95em;
+  &:before {
+    content: "";
+    display: block;
+    width: 3em;
+    border-top: 5px solid #ef5223;
+    padding-top: 0.2em;
+  }
+}
+
+.title {
+  color: $greyHeaders;
+  font-weight: bold;
+  margin: 1em auto 1em;
+  display: table;
+  &_recommended {
+    color: $ctvwhite;
+  }
+  &_orange {
+    color: white;
+    font-weight: bold;
+    margin: 0em auto;
+    display: block;
+    background-color: #ef5223;
+    text-align: center;
+  }
+  &_moreFromBelarus {
+    margin: 1em auto 0em;
+  }
+}
+
+.view-content {
+  & ul {
+    list-style-type: none;
+    padding: 0em;
+  }
+}
+
+#user-login {
+  margin: 1em 0;
+  padding: 1em;
+  @include boxShadow;
+}

@@ -1,0 +1,31 @@
+@import 'init/customcolors';
+@import 'init/custom-mixins';
+
+.page-taxonomy-term {
+  & #content {
+    flex-basis: 100%;
+  }
+}
+
+.view {
+  &.view-taxonomy-term, &.view-recommended-from-taxonomy {
+    & .view-content {
+      justify-content: center;
+      & .views-row {
+        flex-basis: 300px;
+        flex-grow: 0;
+        @include boxShadow;
+        & .views-field-title {
+          padding: 1em;
+          padding-left: 0.2em;
+        }
+      }
+    }
+  }
+}
+
+#taxonomy-recommended-items {
+  padding: 1em;
+  background: linear-gradient(to top, darken($ctvblue, 20%), darken($ctvblue, 10%));
+  margin: 0em -1em 2em -1em;
+}

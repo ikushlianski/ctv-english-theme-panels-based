@@ -1,0 +1,15 @@
+// Custom colors for website
+$ctvblue: #4e729a;
+$ctvblue_darker: darken($ctvblue, 10%);
+$ctvblue_lighter: lighten($ctvblue, 50%);
+$ctvwhite: whitesmoke;
+$color__accent: #ef5223;
+$ctvorange: $color__accent;
+$ctvorange_lighter: lighten($ctvorange, 30%);
+$grey: grey;
+$greyTextBackground: rgba(34, 34, 34, 0.9);
+$lightgrey: rgba(158, 158, 158, 0.15);
+$greyHeaders: #666;
+$ctvtext: #333;
+$ctvdarkgrey: #333;
+$ctvmainwrapper: rgb(250, 250, 250);

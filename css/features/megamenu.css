@@ -1,0 +1,41 @@
+li.attached-block a {
+  display: block;
+}
+
+.menu-attach-block-wrapper.orientation-horizontal {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .menu-attach-block-wrapper.orientation-horizontal {
+    width: 100%;
+  }
+  .menu-attach-block-wrapper.orientation-horizontal.open {
+    display: -webkit-box;
+    display: flex;
+    position: absolute;
+    left: 0;
+  }
+  .menu-attach-block-wrapper.orientation-horizontal.open .block {
+    position: absolute;
+    margin: 0;
+    top: 1.7em;
+    width: 100%;
+  }
+}
+
+.menu-attach-block-wrapper.orientation-horizontal .views-field-title a {
+  color: #333 !important;
+  text-shadow: none !important;
+}
+
+.menu-attach-block-wrapper.orientation-horizontal .view-content {
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.menu-attach-block-wrapper.orientation-horizontal .view-content .views-row {
+  flex-basis: 0;
+}
+
+/*# sourceMappingURL=megamenu.css.map */

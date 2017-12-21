@@ -1,0 +1,1 @@
+{"version":3,"sources":["messages.css"],"names":[],"mappings":"AAAA;EACE,eAAe;EACf,kBAAkB;CACnB","file":"messages.css","sourcesContent":[".messages, .messages--status {\n  margin: 0 auto;\n  max-width: 1024px;\n}\n"]}

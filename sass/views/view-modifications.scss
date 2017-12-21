@@ -1,0 +1,114 @@
+@import 'init/customcolors';
+@import 'init/custom-mixins';
+
+.view {
+  &.marginRightOnLast-off {
+    & .views-row:last-child {
+      margin-right: 0!important;
+    }
+  }
+  &.fp-block {
+    & .views-row {
+      box-shadow: none;
+      background-color: transparent;
+    }
+  }
+  &.smallImg {
+    & .view-content {
+      & .views-row {
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        box-shadow: none;
+        margin-bottom: 1em;
+        & .views-field-field-image {
+          position: relative;
+          display: flex;
+          flex-basis: 35%;
+          margin-top: 0.2em;
+        }
+        & .views-field-title {
+          flex-basis: 65%;
+          padding: 0;
+          padding-left: 0.5em;
+        }
+      }
+    }
+  }
+  &.titleOnly {
+    & .view-content {
+      & .views-row {
+        display: flex;
+        background-color: transparent;
+        box-shadow: none;
+        //font-size: 120%;
+        margin: 0.5em 0.3em;
+        & .views-field-title {
+          flex-basis: 100%;
+          padding: 0;
+        }
+      }
+    }
+  }
+  &.boxShadow_on {
+    & .view-content {
+      & .views-row {
+        @include boxShadow();
+      }
+    }
+  }
+  &.fp-featured {
+    & .view-content {
+      & .views-row {
+        background-color: transparent;
+        box-shadow: none;
+        & .views-field-title {
+          flex-basis: 100%;
+          padding: 0.5em 0em;
+        }
+      }
+    }
+  }
+  &.noBackgroundColors {
+    & .view-content {
+      & .views-row {
+        & .views-field {
+          background-color: transparent;
+          box-shadow: none;
+          & a {
+            color: inherit;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.titleOnImg {
+    & .views-field-title {
+      position: absolute;
+      bottom: 0;
+      padding: 0.5em;
+      & a {
+        color: white;
+        background-color: rgba(34, 34, 34, 0.8);
+        display: inherit;
+        font-size: larger;
+      }
+    }
+  }
+  &.view-front-page-media, &.view-front-page-media-first {
+    & .view-content {
+      & .views-row {
+        background-color: transparent;
+        box-shadow: none;
+        & .views-field-title {
+          a {
+           color: grey;
+          }
+        }
+      }
+    }
+  }
+}

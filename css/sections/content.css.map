@@ -1,0 +1,1 @@
+{"version":3,"sources":["content.css"],"names":[],"mappings":"AAAA;EACE,YAAY;CACb;;AAED;EACE;IACE,eAAe;GAChB;CACF","file":"content.css","sourcesContent":["#content {\n  color: #333;\n}\n\n@media (max-width: 768px) {\n  #content {\n    padding: 0 1em;\n  }\n}\n"]}

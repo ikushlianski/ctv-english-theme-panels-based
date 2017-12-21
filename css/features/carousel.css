@@ -1,0 +1,25 @@
+.carouselView .views-row {
+  margin: 0 !important;
+}
+
+.carouselView .views-field-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  color: white !important;
+  font-weight: bold;
+  padding: 0.3em 2em !important;
+}
+
+.carouselView .views-field-title a {
+  color: white !important;
+}
+
+.carouselView img:hover {
+  -webkit-filter: none !important;
+          filter: none !important;
+}
+
+/*# sourceMappingURL=carousel.css.map */

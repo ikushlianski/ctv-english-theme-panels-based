@@ -1,0 +1,141 @@
+@import 'init/customcolors';
+
+
+.fp-media-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.node-type-home-page {
+  & .block {
+    // margin-top: 0em;
+  }
+}
+
+.view-front-page-two-main {
+  & .views-row {
+    @media (max-width: 767px) {
+      margin-left: 0!important;
+      margin-right: 0!important;
+    }
+  }
+}
+.view-front-page-two-main, .view-front-page-media-first {
+  & .view-content {
+    display: flex;
+    flex-wrap: nowrap;
+    & .views-row {
+      flex-basis: 300px;
+
+      &:first-child  {
+        flex-basis: 350px;
+      }
+      & .itemLink {
+        color: white;
+        &:hover {
+
+        }
+      }
+      & .itemWrapper {
+        position: relative;
+        height: 22em;
+        background-position: center;
+        background-size: cover;
+        transition: all 0.2s;
+        &:hover {
+          //filter: brightness(0.95);
+        }
+
+      }
+      & .itemTitle {
+        position: absolute;
+        bottom: 0rem;
+        left: 1rem;
+        /* margin: 0.5em; */
+        line-height: normal;
+        pointer-events: none;
+        & .itemTitleText {
+          background-color: transparentize(#222, 0.1);
+          color: white;
+          font-weight: bold;
+        }
+      }
+      & .fp_categoryLink {
+        display: table;
+        text-decoration: none;
+        background-color: $ctvorange;
+        color: white;
+        font-size: 0.7em;
+        margin: 1em 0;
+        padding: 0 0.5em;
+        pointer-events: initial;
+        &:hover {
+          color: white;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+.view-front-page-two-main {
+  margin-left: -0.5em;
+  margin-right: -0.5em;
+  & .views-row {
+    margin: 0.5em!important;
+  }
+  & a.fp_categoryLink {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0 0.5em;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.view-front-page-three-main {
+  margin: -0.5em;
+  & .views-row {
+    position: relative;
+    margin: 0.5em!important;
+    // &:not(:first-child) {
+    //   margin: 0em 0em 0.3em 0.5em!important;
+    // }
+    & .views-field-field-category {
+      position: absolute;
+      top: 1em;
+      left: 1em;
+      background-color: $ctvorange;
+      & a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 0 0.5em;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (min-width: 768px) {
+
+  .view-front-page-two-main {
+    & .view-content {
+      display: flex;
+      & .views-row {
+
+        &:first-child  {
+          flex-basis: 55%;
+        }
+        &:last-child {
+          flex-basis: 35%;
+        }
+      }
+    }
+  }
+}

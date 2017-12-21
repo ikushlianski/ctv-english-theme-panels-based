@@ -1,0 +1,1 @@
+{"version":3,"sources":["embeds.css"],"names":[],"mappings":"AAAA;EACE,gBAAgB;EAChB,eAAe;EACf,eAAe;CAChB;;AAED;EACE,eAAe;CAChB","file":"embeds.css","sourcesContent":[".node iframe, .node blockquote {\n  max-width: 100%;\n  margin: 0 auto;\n  display: table;\n}\n\ntwitterwidget {\n  margin: 0 auto;\n}\n"]}

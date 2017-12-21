@@ -1,0 +1,25 @@
+.advertizerSiteLink {
+  height: 12em !important;
+}
+
+@media (max-width: 767px) {
+  .advertizerSiteLink {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 767px) {
+  #page {
+    background-image: none !important;
+    padding-top: 1em;
+    background-color: #fafafa !important;
+  }
+}
+
+/*# sourceMappingURL=ads-background.css.map */

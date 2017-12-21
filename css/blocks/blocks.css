@@ -1,0 +1,103 @@
+.block__title {
+  margin: 0.5em 0;
+  color: #ef5223;
+  text-align: center;
+  font-size: 120%;
+  display: inline-block;
+  line-height: normal;
+  font-weight: bold;
+}
+
+.block-views .block__title a {
+  color: #ef5223;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.block-views .block__title a:hover {
+  text-decoration: underline;
+}
+
+.block-views {
+  margin: 0.5em;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+  padding: 0.5em 1em;
+  background-color: white;
+}
+
+#sidebar-first .block-views {
+  margin: 1em 0;
+}
+
+#sidebar-first .block-views:first-child {
+  margin-top: 0em;
+  padding-top: 0em;
+}
+
+#sidebar-first .block-views:first-child .block__title {
+  margin-top: 0em;
+}
+
+#taxonomy-recommended-items .block-views {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+#block-views-front-page-two-main-block {
+  padding-bottom: 0em;
+}
+
+.boxShadow--off {
+  box-shadow: none;
+}
+
+.relatedLinks {
+  margin: 0.5em 0em;
+  display: inline-block;
+  font-size: 0.95em;
+}
+
+.relatedLinks:before {
+  content: "";
+  display: block;
+  width: 3em;
+  border-top: 5px solid #ef5223;
+  padding-top: 0.2em;
+}
+
+.title {
+  color: #666;
+  font-weight: bold;
+  margin: 1em auto 1em;
+  display: table;
+}
+
+.title_recommended {
+  color: whitesmoke;
+}
+
+.title_orange {
+  color: white;
+  font-weight: bold;
+  margin: 0em auto;
+  display: block;
+  background-color: #ef5223;
+  text-align: center;
+}
+
+.title_moreFromBelarus {
+  margin: 1em auto 0em;
+}
+
+.view-content ul {
+  list-style-type: none;
+  padding: 0em;
+}
+
+#user-login {
+  margin: 1em 0;
+  padding: 1em;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/*# sourceMappingURL=blocks.css.map */

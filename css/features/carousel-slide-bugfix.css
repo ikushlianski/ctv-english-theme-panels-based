@@ -1,0 +1,16 @@
+@media not all, (-webkit-transform-3d) {
+  .carouselView .slide .carousel-inner > .item.active.left, .carouselView .slide .carousel-inner > .item.active.right, .carouselView .slide .carousel-inner > .item.prev {
+    position: absolute;
+    left: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  .carouselView .slide .carousel-inner > .item.active, .carouselView .slide .carousel-inner > .item.next.left, .carouselView .slide .carousel-inner > .item.prev.right {
+    position: relative;
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/*# sourceMappingURL=carousel-slide-bugfix.css.map */

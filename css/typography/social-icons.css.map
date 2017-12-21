@@ -1,0 +1,1 @@
+{"version":3,"sources":["social-icons.css"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,mBAAmB;CACpB;;AAED;EACE,iBAAiB;EACjB,YAAY;EACZ,eAAe;CAChB","file":"social-icons.css","sourcesContent":[".socialButton {\n  width: 2em;\n  text-align: center;\n}\n\n.socialButton .fa.fa-2x {\n  font-size: 1.5em;\n  color: #666;\n  color: #4e729a;\n}\n"]}

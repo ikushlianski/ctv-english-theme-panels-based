@@ -1,0 +1,97 @@
+.view.marginRightOnLast-off .views-row:last-child {
+  margin-right: 0 !important;
+}
+
+.view.fp-block .views-row {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.view.smallImg .view-content .views-row {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  background-color: transparent;
+  box-shadow: none;
+  margin-bottom: 1em;
+}
+
+.view.smallImg .view-content .views-row .views-field-field-image {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  flex-basis: 35%;
+  margin-top: 0.2em;
+}
+
+.view.smallImg .view-content .views-row .views-field-title {
+  flex-basis: 65%;
+  padding: 0;
+  padding-left: 0.5em;
+}
+
+.view.titleOnly .view-content .views-row {
+  display: -webkit-box;
+  display: flex;
+  background-color: transparent;
+  box-shadow: none;
+  margin: 0.5em 0.3em;
+}
+
+.view.titleOnly .view-content .views-row .views-field-title {
+  flex-basis: 100%;
+  padding: 0;
+}
+
+.view.boxShadow_on .view-content .views-row {
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.view.fp-featured .view-content .views-row {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.view.fp-featured .view-content .views-row .views-field-title {
+  flex-basis: 100%;
+  padding: 0.5em 0em;
+}
+
+.view.noBackgroundColors .view-content .views-row .views-field {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.view.noBackgroundColors .view-content .views-row .views-field a {
+  color: inherit;
+}
+
+.view.noBackgroundColors .view-content .views-row .views-field a:hover {
+  text-decoration: underline;
+}
+
+.view.titleOnImg .views-field-title {
+  position: absolute;
+  bottom: 0;
+  padding: 0.5em;
+}
+
+.view.titleOnImg .views-field-title a {
+  color: white;
+  background-color: rgba(34, 34, 34, 0.8);
+  display: inherit;
+  font-size: larger;
+}
+
+.view.view-front-page-media .view-content .views-row, .view.view-front-page-media-first .view-content .views-row {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.view.view-front-page-media .view-content .views-row .views-field-title a, .view.view-front-page-media-first .view-content .views-row .views-field-title a {
+  color: grey;
+}
+
+/*# sourceMappingURL=view-modifications.css.map */
