@@ -84,25 +84,25 @@ scripts[] = js/script.js
 ; And you'll use this variable in maintenance-page.tpl.php:
 ;   <?php print $header_top; ?>
 
-regions[header]         = Header
-regions[navigation]     = Navigation bar
-regions[highlighted]    = Highlighted
-regions[help]           = Help
-regions[content]        = Content
-regions[sidebar_first]  = First sidebar
-regions[footer]         = Footer
-regions[bottom]         = Page bottom
-regions[sitemap_nav]    = Togglable Full Site Navigation
-regions[related_content]    = Related content zone under main content
-regions[content_recommended]    = Recommended content under related content
-regions[sidebar_recommended]    = Sidebar for recommended content
-regions[taxonomy_recommended_items]    = Block for recommended items (if any) from viewed taxonomy
-regions[fp_five_main_items]    = Top five on front page
-regions[fp_three_submain_sections]    = Top three sections on front page
-regions[fp_media]    = Media section on front page
-regions[fp_other1]    = Other FP content 1
-regions[fp_other2]    = Other FP content 2
-regions[fp_sidebar]    = Section for sidebar on FP for various content
+;regions[header]         = Header
+;regions[navigation]     = Navigation bar
+;regions[highlighted]    = Highlighted
+;regions[help]           = Help
+;regions[content]        = Content
+;regions[sidebar_first]  = First sidebar
+;regions[footer]         = Footer
+;regions[bottom]         = Page bottom
+;regions[sitemap_nav]    = Togglable Full Site Navigation
+;regions[related_content]    = Related content zone under main content
+;regions[content_recommended]    = Recommended content under related content
+;regions[sidebar_recommended]    = Sidebar for recommended content
+;regions[taxonomy_recommended_items]    = Block for recommended items (if any) from viewed taxonomy
+;regions[fp_five_main_items]    = Top five on front page
+;regions[fp_three_submain_sections]    = Top three sections on front page
+;regions[fp_media]    = Media section on front page
+;regions[fp_other1]    = Other FP content 1
+;regions[fp_other2]    = Other FP content 2
+;regions[fp_sidebar]    = Section for sidebar on FP for various content
 
 
 ; The page_top and page_bottom regions are hidden, which means they will not
@@ -152,4 +152,4 @@ settings[zen_rebuild_registry]     = 1
 
 ; To add a Panels layout (which can also be used by Display Suite), uncomment
 ; the line below and see the documentation at: https://drupal.org/node/495654
-;plugins[panels][layouts] = panels-layouts
+plugins[panels][layouts] = panels-layouts
