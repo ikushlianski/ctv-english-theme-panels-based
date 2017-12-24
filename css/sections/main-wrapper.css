@@ -6,6 +6,10 @@
   margin: 5em 0em 0;
 }
 
+#page {
+  color: #555;
+}
+
 #main-wrapper {
   margin: 0 1em;
   background-color: #fafafa;

@@ -22,14 +22,13 @@
     <div id="header">
       <div class="section clearfix">
         <div id="navigation">
-          <div class="section nav-group-mobile">
+          <div class="nav-group-mobile">
             <?php print $content['main-menu-mobile'];?>
           </div>
-          <div class="section nav-group1-desktop">
+          <div class="nav-group1-desktop">
             <?php print $content['main-menu-1'];?>
           </div>
-          <div class="section nav-group2-desktop">
-            <h4 class="hot-topics-heading">Trending</h4>
+          <div class="nav-group2-desktop">
             <?php print $content['main-menu-2'];?>
           </div>
         </div>

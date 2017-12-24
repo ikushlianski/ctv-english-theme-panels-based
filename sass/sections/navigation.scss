@@ -1,1 +1,125 @@
 @import 'init/customcolors';
+@import 'init/custom-mixins';
+
+.brandAndToggleDiv {
+  @media (min-width: 768px) {
+    display: none;
+  }
+  height: 4em;
+  background-color: $ctvwhite;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  padding: 0.5em;
+  & .logo {
+    display: flex;
+  }
+  @include boxShadow;
+}
+
+.logo_lang {
+  display::none;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
+  &.toggled-on {
+    display: inline-block;
+    display: block;
+    text-align: center;
+  }
+  & img {
+    height: auto;
+    width: 2.5em;
+  }
+}
+
+.menu {
+  & li {
+    list-style-type: none;
+    list-style-image: none;
+  }
+  & a {
+    text-decoration: none;
+  }
+}
+
+.mobile-search-form {
+  display::none;
+  padding-left: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-right: 1.5rem;
+  &.toggled-on {
+    display: block;
+  }
+  & .form-item-search-block-form {
+    margin-bottom: 0.5em;
+    & input {
+      width: 100%;
+    }
+  }
+  & .form-actions {
+    text-align: center;
+  }
+}
+
+.nav-group1-desktop, .nav-group2-desktop {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.nav-group1-desktop {
+  & a {
+    font-weight: bold;
+  }
+}
+
+.nav-group-mobile {
+  @media (min-width: 768px) {
+    display: none;
+  }
+  @include boxShadow;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparentize($ctvwhite, 0.05);
+  & .logo {
+    & img {
+      height: 3em;
+    }
+  }
+  & .menu {
+    padding: 1.5rem;
+    padding-bottom: 0rem;
+    margin: 0;
+    display: none;
+    &__item {
+      padding: 0.5em 0;
+      & a {
+        padding: 1em;
+        margin: -1em;
+        font-weight: bold;
+      }
+    }
+    &.toggled-on {
+      display: block;
+    }
+  }
+}
+
+.site-slogan-mobile {
+  text-align: center;
+  font-size: 0.9em;
+  line-height: normal;
+  & .company-name {
+    font-weight: bold;
+  }
+}
+
+.toggle {
+  width: 1em;
+  text-align: center;
+  cursor: pointer;
+}

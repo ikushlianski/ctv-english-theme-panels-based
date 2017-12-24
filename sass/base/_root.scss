@@ -1,3 +1,5 @@
+@import '../init/customcolors';
+@import '../init/custom-mixins';
 // sass-lint:disable no-vendor-prefixes
 
 // Use the saner border-box model for all elements.
@@ -15,7 +17,7 @@ html {
   // On short pages, we want any background gradients to fill the entire height
   // of the browser.
   min-height: 100%;
-  background-color: inherit;
+  background-color: $ctvwhite;
 }
 
 body {

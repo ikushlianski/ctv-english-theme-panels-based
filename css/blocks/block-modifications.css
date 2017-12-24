@@ -74,11 +74,11 @@
 }
 
 .block.block_filled_lightblue .block__title {
-  color: #666 !important;
+  color: #555 !important;
 }
 
 .block.block_filled_lightblue a {
-  color: #666 !important;
+  color: #555 !important;
 }
 
 .block.block_filled_lightblue .views-field-title {
@@ -90,7 +90,7 @@
 }
 
 .block.block_filled_darkgrey .block__title {
-  color: #666 !important;
+  color: #555 !important;
   margin: 1em 0;
 }
 

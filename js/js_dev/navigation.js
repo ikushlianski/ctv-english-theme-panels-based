@@ -28,7 +28,7 @@
 
     // mobile menu toggle behavior
     $('.toggle').on('click', function () {
-      $('.nav-menu-div, .nav-group, #main-wrapper').toggleClass('toggled-on');
+      $('.nav-group-mobile .menu, #main-wrapper, .mobile-search-form, .logo_lang').toggleClass('toggled-on');
       $(this).toggleClass('fa-bars').toggleClass('fa-times');
     });
     // large screen toggle menu behavior
@@ -51,28 +51,28 @@
       }
     });
 
-    if ( $(window).width() > 768 ) {
-      // $('.login-menu').detach();
-      $('.login-menu').appendTo('.login-menu-hider');
-      $('.login-menu').css({});
-      if ($('.login-menu-hider').children().length > 0) {
-        $('.login-menu-hider-link').show();
-      }
-    }
+    // if ( $(window).width() > 768 ) {
+    //   // $('.login-menu').detach();
+    //   $('.login-menu').appendTo('.login-menu-hider');
+    //   $('.login-menu').css({});
+    //   if ($('.login-menu-hider').children().length > 0) {
+    //     $('.login-menu-hider-link').show();
+    //   }
+    // }
 
-    $(window).on("click", function(event){
-      if ($('.login-menu').hasClass('toggled-on') && event.target.className != "login-menu-hider") {
-        $('.login-menu').removeClass('toggled-on');
-        event.stopPropagation();
-      }
-    });
+    // $(window).on("click", function(event){
+    //   if ($('.login-menu').hasClass('toggled-on') && event.target.className != "login-menu-hider") {
+    //     $('.login-menu').removeClass('toggled-on');
+    //     event.stopPropagation();
+    //   }
+    // });
 
-    $('.login-menu-hider').on('click', function(event){
-      if ( !$('.login-menu').hasClass('toggled-on') ) {
-        $('.login-menu').addClass('toggled-on');
-        event.stopPropagation();
-      }
-    });
+    // $('.login-menu-hider').on('click', function(event){
+    //   if ( !$('.login-menu').hasClass('toggled-on') ) {
+    //     $('.login-menu').addClass('toggled-on');
+    //     event.stopPropagation();
+    //   }
+    // });
 
     // hide menu on scroll down and show on scroll up
     var lastScrollTop = 0;
@@ -80,10 +80,10 @@
       if ( $('.nav-group').css('position') == "fixed" ) {
         var st = $(this).scrollTop();
         if (st > lastScrollTop && st > 100){
-          // downscroll code
+          // downscroll
           if (!$('.nav-group').hasClass('toggled-on')) {$('.nav-group').fadeOut(100);}
         } else {
-          // upscroll code
+          // upscroll
           if (!$('.nav-group').hasClass('toggled-on')) {$('.nav-group').fadeIn(100);}
         }
         lastScrollTop = st;
