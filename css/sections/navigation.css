@@ -23,6 +23,18 @@
   display: flex;
 }
 
+.hot-topics-heading {
+  display: -webkit-box;
+  display: flex;
+  margin: 0 1em 0 1em;
+  padding: 0 0.5em;
+  color: whitesmoke;
+  background-color: #f16c44;
+  align-self: stretch;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
 .logo_lang {
   display: none;
   padding-left: 1.5rem;
@@ -39,6 +51,20 @@
 .logo_lang img {
   height: auto;
   width: 2.5em;
+}
+
+.logoAndCompanyName {
+  display: -webkit-box;
+  display: flex;
+}
+
+.logoAndCompanyName img {
+  width: 4em;
+  height: auto;
+}
+
+.logoAndCompanyName a {
+  text-decoration: none;
 }
 
 .menu li {
@@ -75,16 +101,70 @@
 
 .nav-group1-desktop, .nav-group2-desktop {
   display: none;
+  padding: 0 2em;
+  max-width: 1248px;
 }
 
 @media (min-width: 768px) {
   .nav-group1-desktop, .nav-group2-desktop {
-    display: block;
+    display: -webkit-box;
+    display: flex;
   }
+}
+
+.nav-group1-desktop .menu, .nav-group2-desktop .menu {
+  padding: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.nav-group1-desktop .menu li, .nav-group2-desktop .menu li {
+  padding: 0.5em;
+}
+
+.nav-group1-desktop .menu li:first-child, .nav-group2-desktop .menu li:first-child {
+  padding-left: 0;
+}
+
+.nav-group1-desktop .menu li:last-child, .nav-group2-desktop .menu li:last-child {
+  padding-right: 0;
+}
+
+.nav-group1-desktop .menu li a, .nav-group2-desktop .menu li a {
+  color: whitesmoke;
+  text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.5);
+  transition: color 0.2s;
+}
+
+.nav-group1-desktop .menu li a:hover, .nav-group2-desktop .menu li a:hover {
+  color: #ced9e6;
+}
+
+.nav-group1-desktop {
+  height: 6em;
+  margin: 0 auto;
+  background-color: #3d5978;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 
 .nav-group1-desktop a {
   font-weight: bold;
+  display: -webkit-box;
+  display: flex;
+}
+
+.nav-group2-desktop {
+  height: 3em;
+  margin: 0 auto;
+  background-color: #4e729a;
+}
+
+.nav-group2-desktop a {
+  display: -webkit-box;
+  display: flex;
 }
 
 .nav-group-mobile {
@@ -126,6 +206,25 @@
   display: block;
 }
 
+.site-brand-header {
+  line-height: normal;
+  padding: 1em 0.5em;
+  color: whitesmoke;
+  font-weight: bold;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  font-size: 0.9em;
+}
+
+.site-brand-header .company-name {
+  font-size: 1.5em;
+}
+
 .site-slogan-mobile {
   text-align: center;
   font-size: 0.9em;
@@ -140,6 +239,19 @@
   width: 1em;
   text-align: center;
   cursor: pointer;
+}
+
+.weather-widget {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .weather-widget {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+  }
 }
 
 /*# sourceMappingURL=navigation.css.map */

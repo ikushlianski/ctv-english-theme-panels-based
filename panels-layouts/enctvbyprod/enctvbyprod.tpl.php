@@ -20,7 +20,7 @@
 
   <div id="page">
     <div id="header">
-      <div class="section clearfix">
+      <div class="clearfix">
         <div id="navigation">
           <div class="nav-group-mobile">
             <?php print $content['main-menu-mobile'];?>
