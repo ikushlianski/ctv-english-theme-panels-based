@@ -12,9 +12,7 @@
  *   $content['middle']: The only panel in the layout.
  */
 ?>
-<div class="region-sitemap-nav">
-  <?php print $content['sitemap-nav'];?>
-</div>
+
 
 <div id="page-wrapper">
 
@@ -22,15 +20,8 @@
     <div id="header">
       <div class="clearfix">
         <div id="navigation">
-          <div class="nav-group-mobile">
-            <?php print $content['main-menu-mobile'];?>
-          </div>
-          <div class="nav-group1-desktop">
-            <?php print $content['main-menu-1'];?>
-          </div>
-          <div class="nav-group2-desktop">
-            <?php print $content['main-menu-2'];?>
-          </div>
+          <?php print $content['header'];?>
+          
         </div>
       </div>
     </div>
