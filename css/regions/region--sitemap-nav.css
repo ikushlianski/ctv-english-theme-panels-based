@@ -6,31 +6,35 @@
   .region-sitemap-nav.toggled-on {
     display: -webkit-box;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    -webkit-box-pack: center;
-            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
     position: fixed;
     align-self: stretch;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(245, 245, 245, 0.95);
     overflow: scroll;
     padding: 1em;
     width: 100%;
     height: 100vh;
     z-index: 10;
+    flex-wrap: wrap;
   }
-  .region-sitemap-nav.toggled-on .menu-blocks {
+  .region-sitemap-nav.toggled-on #search-block-form--2 {
+    flex-basis: 100%;
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
             justify-content: center;
     -webkit-box-align: center;
             align-items: center;
-    flex-wrap: wrap;
-    padding: 5em;
+    text-align: center;
   }
-  .region-sitemap-nav.toggled-on .menu-blocks .block-menu-block {
+  .region-sitemap-nav.toggled-on #search-block-form--2 > div {
+    width: 20em !important;
+  }
+  .region-sitemap-nav.toggled-on #search-block-form--2 > div input[name="search_block_form"] {
+    width: 100%;
+  }
+  .region-sitemap-nav.toggled-on .pane-menu-menu-full-site-navigation-menu {
     flex-basis: 33.333333%;
     flex-shrink: 0;
     display: -webkit-box;
@@ -38,36 +42,34 @@
     -webkit-box-pack: center;
             justify-content: center;
   }
-  .region-sitemap-nav.toggled-on .menu-blocks ul, .region-sitemap-nav.toggled-on .menu-blocks li {
+  .region-sitemap-nav.toggled-on ul, .region-sitemap-nav.toggled-on li {
     list-style-type: none;
     list-style-image: none;
   }
-  .region-sitemap-nav.toggled-on .menu-blocks .block__title {
+  .region-sitemap-nav.toggled-on .block__title {
     display: none;
   }
-  .region-sitemap-nav.toggled-on .menu-blocks .menu__item.is-expanded > a {
+  .region-sitemap-nav.toggled-on .menu__item.is-expanded > a {
     font-size: 1.4em;
     font-weight: bold;
     border-bottom: 1px solid #ef5223;
-    color: whitesmoke;
     text-decoration: none;
   }
-  .region-sitemap-nav.toggled-on .menu-blocks .menu__item.is-expanded .menu {
+  .region-sitemap-nav.toggled-on .menu__item.is-expanded .menu {
     padding: 0em;
     margin-top: 1em;
   }
-  .region-sitemap-nav.toggled-on .menu-blocks .menu__item.is-expanded .menu a {
-    color: whitesmoke;
+  .region-sitemap-nav.toggled-on .menu__item.is-expanded .menu a {
     text-decoration: none;
     transition: color 0.2s;
   }
-  .region-sitemap-nav.toggled-on .menu-blocks .menu__item.is-expanded .menu a:hover {
+  .region-sitemap-nav.toggled-on .menu__item.is-expanded .menu a:hover {
     color: #ef5223;
   }
   .region-sitemap-nav.toggled-on .toggle_largeScreens {
     position: absolute;
-    top: 0.5em;
-    color: white;
+    top: 1em;
+    color: #4e729a;
     right: 1em;
     cursor: pointer;
     transition: color 0.2s;

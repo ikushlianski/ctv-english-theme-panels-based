@@ -1,3 +1,7 @@
+.booked-weather-160x36-city {
+  text-align: center;
+}
+
 .brandAndToggleDiv {
   height: 4em;
   background-color: whitesmoke;
@@ -26,7 +30,7 @@
 .hot-topics-heading {
   display: -webkit-box;
   display: flex;
-  margin: 0 1em 0 1em;
+  margin: 0 1em 0 0em;
   padding: 0 0.5em;
   color: whitesmoke;
   background-color: #f16c44;
@@ -45,7 +49,6 @@
 .logo_lang.toggled-on {
   display: inline-block;
   display: block;
-  text-align: center;
 }
 
 .logo_lang img {
@@ -146,8 +149,9 @@
   height: 6em;
   margin: 0 auto;
   background-color: #3d5978;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  position: relative;
 }
 
 .nav-group1-desktop a {
@@ -156,10 +160,24 @@
   display: flex;
 }
 
+.nav-group1-desktop .menu {
+  margin-left: 2em;
+  margin-right: 2em;
+  flex-basis: 40%;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+}
+
+.nav-group1-desktop .menu li {
+  white-space: nowrap;
+}
+
 .nav-group2-desktop {
   height: 3em;
   margin: 0 auto;
   background-color: #4e729a;
+  -webkit-box-pack: center;
+          justify-content: center;
 }
 
 .nav-group2-desktop a {
@@ -206,6 +224,29 @@
   display: block;
 }
 
+.secondary_menu_wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  color: whitesmoke;
+  position: relative;
+}
+
+.secondary_menu_wrapper > * {
+  padding: 0.5em;
+}
+
+.secondary_menu_wrapper .toggle_largeScreens {
+  padding: 0.25em;
+  cursor: pointer;
+}
+
+.secondary_menu_wrapper .logo_lang {
+  width: 44px;
+  height: 44px;
+}
+
 .site-brand-header {
   line-height: normal;
   padding: 1em 0.5em;
@@ -219,6 +260,12 @@
   -webkit-box-pack: center;
           justify-content: center;
   font-size: 0.9em;
+}
+
+@media (max-width: 960px) {
+  .site-brand-header {
+    font-size: 70%;
+  }
 }
 
 .site-brand-header .company-name {
@@ -235,6 +282,10 @@
   font-weight: bold;
 }
 
+.subtext {
+  color: #6bb3e3;
+}
+
 .toggle {
   width: 1em;
   text-align: center;
@@ -245,7 +296,7 @@
   display: none;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
   .weather-widget {
     display: -webkit-box;
     display: flex;

@@ -2201,6 +2201,10 @@ twitterwidget {
   }
 }
 
+.booked-weather-160x36-city {
+  text-align: center;
+}
+
 .brandAndToggleDiv {
   height: 4em;
   background-color: whitesmoke;
@@ -2229,7 +2233,7 @@ twitterwidget {
 .hot-topics-heading {
   display: -webkit-box;
   display: flex;
-  margin: 0 1em 0 1em;
+  margin: 0 1em 0 0em;
   padding: 0 0.5em;
   color: whitesmoke;
   background-color: #f16c44;
@@ -2248,7 +2252,6 @@ twitterwidget {
 .logo_lang.toggled-on {
   display: inline-block;
   display: block;
-  text-align: center;
 }
 
 .logo_lang img {
@@ -2349,8 +2352,9 @@ twitterwidget {
   height: 6em;
   margin: 0 auto;
   background-color: #3d5978;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  position: relative;
 }
 
 .nav-group1-desktop a {
@@ -2359,10 +2363,24 @@ twitterwidget {
   display: flex;
 }
 
+.nav-group1-desktop .menu {
+  margin-left: 2em;
+  margin-right: 2em;
+  flex-basis: 40%;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+}
+
+.nav-group1-desktop .menu li {
+  white-space: nowrap;
+}
+
 .nav-group2-desktop {
   height: 3em;
   margin: 0 auto;
   background-color: #4e729a;
+  -webkit-box-pack: center;
+          justify-content: center;
 }
 
 .nav-group2-desktop a {
@@ -2409,6 +2427,29 @@ twitterwidget {
   display: block;
 }
 
+.secondary_menu_wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  color: whitesmoke;
+  position: relative;
+}
+
+.secondary_menu_wrapper > * {
+  padding: 0.5em;
+}
+
+.secondary_menu_wrapper .toggle_largeScreens {
+  padding: 0.25em;
+  cursor: pointer;
+}
+
+.secondary_menu_wrapper .logo_lang {
+  width: 44px;
+  height: 44px;
+}
+
 .site-brand-header {
   line-height: normal;
   padding: 1em 0.5em;
@@ -2422,6 +2463,12 @@ twitterwidget {
   -webkit-box-pack: center;
           justify-content: center;
   font-size: 0.9em;
+}
+
+@media (max-width: 960px) {
+  .site-brand-header {
+    font-size: 70%;
+  }
 }
 
 .site-brand-header .company-name {
@@ -2438,6 +2485,10 @@ twitterwidget {
   font-weight: bold;
 }
 
+.subtext {
+  color: #6bb3e3;
+}
+
 .toggle {
   width: 1em;
   text-align: center;
@@ -2448,7 +2499,7 @@ twitterwidget {
   display: none;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
   .weather-widget {
     display: -webkit-box;
     display: flex;
@@ -3191,31 +3242,35 @@ figcaption a:visited {
   .region-sitemap-nav.toggled-on {
     display: -webkit-box;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    -webkit-box-pack: center;
-            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
     position: fixed;
     align-self: stretch;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(245, 245, 245, 0.95);
     overflow: scroll;
     padding: 1em;
     width: 100%;
     height: 100vh;
     z-index: 10;
+    flex-wrap: wrap;
   }
-  .region-sitemap-nav.toggled-on .menu-blocks {
+  .region-sitemap-nav.toggled-on #search-block-form--2 {
+    flex-basis: 100%;
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
             justify-content: center;
     -webkit-box-align: center;
             align-items: center;
-    flex-wrap: wrap;
-    padding: 5em;
+    text-align: center;
   }
-  .region-sitemap-nav.toggled-on .menu-blocks .block-menu-block {
+  .region-sitemap-nav.toggled-on #search-block-form--2 > div {
+    width: 20em !important;
+  }
+  .region-sitemap-nav.toggled-on #search-block-form--2 > div input[name="search_block_form"] {
+    width: 100%;
+  }
+  .region-sitemap-nav.toggled-on .pane-menu-menu-full-site-navigation-menu {
     flex-basis: 33.333333%;
     flex-shrink: 0;
     display: -webkit-box;
@@ -3223,36 +3278,34 @@ figcaption a:visited {
     -webkit-box-pack: center;
             justify-content: center;
   }
-  .region-sitemap-nav.toggled-on .menu-blocks ul, .region-sitemap-nav.toggled-on .menu-blocks li {
+  .region-sitemap-nav.toggled-on ul, .region-sitemap-nav.toggled-on li {
     list-style-type: none;
     list-style-image: none;
   }
-  .region-sitemap-nav.toggled-on .menu-blocks .block__title {
+  .region-sitemap-nav.toggled-on .block__title {
     display: none;
   }
-  .region-sitemap-nav.toggled-on .menu-blocks .menu__item.is-expanded > a {
+  .region-sitemap-nav.toggled-on .menu__item.is-expanded > a {
     font-size: 1.4em;
     font-weight: bold;
     border-bottom: 1px solid #ef5223;
-    color: whitesmoke;
     text-decoration: none;
   }
-  .region-sitemap-nav.toggled-on .menu-blocks .menu__item.is-expanded .menu {
+  .region-sitemap-nav.toggled-on .menu__item.is-expanded .menu {
     padding: 0em;
     margin-top: 1em;
   }
-  .region-sitemap-nav.toggled-on .menu-blocks .menu__item.is-expanded .menu a {
-    color: whitesmoke;
+  .region-sitemap-nav.toggled-on .menu__item.is-expanded .menu a {
     text-decoration: none;
     transition: color 0.2s;
   }
-  .region-sitemap-nav.toggled-on .menu-blocks .menu__item.is-expanded .menu a:hover {
+  .region-sitemap-nav.toggled-on .menu__item.is-expanded .menu a:hover {
     color: #ef5223;
   }
   .region-sitemap-nav.toggled-on .toggle_largeScreens {
     position: absolute;
-    top: 0.5em;
-    color: white;
+    top: 1em;
+    color: #4e729a;
     right: 1em;
     cursor: pointer;
     transition: color 0.2s;

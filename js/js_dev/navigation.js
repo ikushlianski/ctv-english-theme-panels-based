@@ -31,8 +31,9 @@
       $('.nav-group-mobile .menu, #main-wrapper, .mobile-search-form, .logo_lang').toggleClass('toggled-on');
       $(this).toggleClass('fa-bars').toggleClass('fa-times');
     });
+
     // large screen toggle menu behavior
-    $('.nav-group .toggle_largeScreens').on('click', function () {
+    $('.toggle_largeScreens').on('click', function () {
       $('.region-sitemap-nav').toggleClass('toggled-on');
       // $('.region-sitemap-nav .toggle_largeScreens').toggleClass('fa-bars').toggleClass('fa-times');
       if ( $('.region-sitemap-nav').hasClass('toggled-on') ) {
@@ -41,15 +42,7 @@
         $('body').css({'overflow':'auto'});
       }
     });
-    $('.region-sitemap-nav .toggle_largeScreens').on('click', function () {
-      $('.region-sitemap-nav').toggleClass('toggled-on');
-      // $('.nav-group .toggle_largeScreens').toggleClass('fa-bars').toggleClass('fa-times');
-      if ( $('.region-sitemap-nav').hasClass('toggled-on') ) {
-        $('body').css({'overflow':'hidden'});
-      } else {
-        $('body').css({'overflow':'auto'});
-      }
-    });
+
 
     // if ( $(window).width() > 768 ) {
     //   // $('.login-menu').detach();
