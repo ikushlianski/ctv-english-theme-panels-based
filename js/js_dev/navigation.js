@@ -28,7 +28,7 @@
 
     // mobile menu toggle behavior
     $('.toggle').on('click', function () {
-      $('.nav-group-mobile .menu, #main-wrapper, .mobile-search-form, .logo_lang').toggleClass('toggled-on');
+      $('.nav-group-mobile, .nav-group-mobile .menu, #main-wrapper, .mobile-search-form, .logo_lang').toggleClass('toggled-on');
       $(this).toggleClass('fa-bars').toggleClass('fa-times');
     });
 

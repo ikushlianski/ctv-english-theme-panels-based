@@ -191,12 +191,18 @@
   top: 0;
   width: 100%;
   background-color: rgba(245, 245, 245, 0.95);
+  z-index: 10;
 }
 
 @media (min-width: 768px) {
   .nav-group-mobile {
     display: none;
   }
+}
+
+.nav-group-mobile.toggled-on {
+  overflow: scroll;
+  height: 100vh;
 }
 
 .nav-group-mobile .logo img {
