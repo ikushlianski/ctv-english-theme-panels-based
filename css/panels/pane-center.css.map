@@ -1,0 +1,1 @@
+{"version":3,"sources":["pane-center.css"],"names":[],"mappings":"AAAA;EACE,YAAY;CACb;;AAED;EACE,cAAc;EACd,eAAe;CAChB","file":"pane-center.css","sourcesContent":[".pane-center {\n  width: 100%;\n}\n\n.pane-latest-from-belarus {\n  margin: 0 1em;\n  padding: 0 1em;\n}\n"]}

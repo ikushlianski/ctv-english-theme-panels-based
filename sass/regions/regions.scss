@@ -134,8 +134,35 @@
   // }
 }
 
+#latestFromBelarusTabContent .block-views {
+  margin: 0.5em 0.1em;
+}
+
 #recommended-content-wrapper {
   display: flex;
+}
+.recommended-content-wrapper {
+  display: flex;
+  margin: 0 2.4em!important;
+  & > .inside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    & .panels-flexible-column-first {
+      flex-basis: 65%;
+      margin-right: -1em;
+      flex-grow: 1;
+    }
+    & .panels-flexible-column-last {
+      flex-basis: 300px;
+      flex-grow: 1;
+      margin-right: -1em;
+      & .block-views {
+        margin-bottom: 0.5em;
+      }
+    }
+  }
 }
 
 #sidebar-first, #sidebar-recommended, #fp-sidebar {

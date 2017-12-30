@@ -15,7 +15,6 @@
 // Style guide: sass
 
 @import 'init';
-
 // Defaults
 //
 // These are the default base styles applied to HTML elements.
@@ -122,6 +121,7 @@
 @import "node-types/any-node";
 @import "node-types/front-page";
 
+@import "panels/pane-center";
 
 @import "regions/regions";
 @import "regions/footer";

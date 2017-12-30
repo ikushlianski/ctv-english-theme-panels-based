@@ -91,6 +91,10 @@
   flex-basis: 180px !important;
 }
 
+.view-display-id-front_page_three_main .views-field-title {
+  font-size: 1em !important;
+}
+
 .view-front-page-three-main, .view-display-id-front_page_three_main {
   margin: 0.5em;
 }
@@ -130,10 +134,10 @@
     display: flex;
   }
   .view-front-page-two-main .view-content .views-row:first-child, .view-display-id-front_page_two_main .view-content .views-row:first-child {
-    flex-basis: 55%;
+    flex-basis: 48%;
   }
   .view-front-page-two-main .view-content .views-row:last-child, .view-display-id-front_page_two_main .view-content .views-row:last-child {
-    flex-basis: 35%;
+    flex-basis: 48%;
   }
 }
 

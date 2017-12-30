@@ -138,9 +138,47 @@
   }
 }
 
+#latestFromBelarusTabContent .block-views {
+  margin: 0.5em 0.1em;
+}
+
 #recommended-content-wrapper {
   display: -webkit-box;
   display: flex;
+}
+
+.recommended-content-wrapper {
+  display: -webkit-box;
+  display: flex;
+  margin: 0 2.4em !important;
+}
+
+.recommended-content-wrapper > .inside {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+          align-items: flex-start;
+}
+
+.recommended-content-wrapper > .inside .panels-flexible-column-first {
+  flex-basis: 65%;
+  margin-right: -1em;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+}
+
+.recommended-content-wrapper > .inside .panels-flexible-column-last {
+  flex-basis: 300px;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  margin-right: -1em;
+}
+
+.recommended-content-wrapper > .inside .panels-flexible-column-last .block-views {
+  margin-bottom: 0.5em;
 }
 
 #sidebar-first, #sidebar-recommended, #fp-sidebar {

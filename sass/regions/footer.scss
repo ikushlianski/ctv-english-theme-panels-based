@@ -1,13 +1,8 @@
 @import 'init/customcolors';
 
 #footer {
-  @media (max-width: 767px) {
-    //width: 100%;
-    //margin: 0 -1em;
-  }
-  @media (min-width: 768px) {
-    // margin: 0 -1em;
-  }
+  margin-left: -1em;
+  margin-right: -1em;
 }
 .footer-content {
   display: flex;
@@ -30,17 +25,23 @@
     //   flex-direction: column;
     //   align-items: center;
     // }
-    & li {
-      @media (max-width: 767px) {
-        padding: 0.5em 0;
+    & .menu {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+      justify-content: center;
+      & li {
+        padding: 0.5em;
+
       }
-    }
-    & a {
-      color: lightgrey;
-      font-size: 0.95em;
-      &:hover {
-        color: grey;
-        text-decoration: none;
+      & a {
+        color: lightgrey;
+        font-size: 0.95em;
+        &:hover {
+          color: grey;
+          text-decoration: none;
+        }
       }
     }
   }
@@ -53,7 +54,8 @@
 }
 .logo_largeScreens_footer {
   margin: 0.5em auto;
-  display: table;
+  display: flex;
+  align-items: center;
   & img {
     width: 2.5em;
   }
@@ -65,20 +67,32 @@
 
 .other-footer-content-wrapper {
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   position: relative;
+  color: #888;
+  & > * {
+    flex-basis: 300px;
+    flex-grow: 1;
+    justify-content: center;
+  }
+  & .publishing-rules {
+    line-height: normal;
+    font-size: 0.8em;
+    text-align: center;
+  }
   & .site-brand-footer {
     line-height: normal;
     padding: 1em 0.5em;
-    color: #666;
+    color: #888;
     font-weight: bold;
     display: flex;
     flex-direction: column;
     font-size: 0.9em;
+    text-align: left;
     & .subtext {
-
+      color: #888;
     }
     & .company-name {
       font-size: 1.5em;
@@ -108,9 +122,10 @@
 }
 .site-author {
   text-align: center;
-  color: #666;
+  color: #888;
   font-size: .8em;
   a {
     color: #999;
+    text-decoration: underline;
   }
 }

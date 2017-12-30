@@ -1,7 +1,21 @@
 @import 'init/customcolors';
 
+
+#latestFromBelarusTabs {
+  padding: 0;
+  margin: 0;
+}
+
+
 .nav-tabs {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.tab-pane {
+  display: none;
+  &.active {
+    display: block;
+  }
 }

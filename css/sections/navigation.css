@@ -201,7 +201,7 @@
 }
 
 .nav-group-mobile.toggled-on {
-  overflow: scroll;
+  overflow: auto;
   height: 100vh;
 }
 

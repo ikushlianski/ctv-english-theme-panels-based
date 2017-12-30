@@ -101,6 +101,9 @@
   & .views-row {
     flex-basis: 180px!important;
   }
+  & .views-field-title {
+    font-size: 1em!important;
+  }
 }
 
 .view-front-page-three-main, .view-display-id-front_page_three_main {
@@ -142,10 +145,10 @@
       & .views-row {
 
         &:first-child  {
-          flex-basis: 55%;
+          flex-basis: 48%;
         }
         &:last-child {
-          flex-basis: 35%;
+          flex-basis: 48%;
         }
       }
     }
