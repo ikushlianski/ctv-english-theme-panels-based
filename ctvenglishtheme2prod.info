@@ -53,8 +53,8 @@ stylesheets[all][] = comment.css
 stylesheets[all][] = node.css
 
 ; Then we add our own stylesheet.
-stylesheets[all][] = css/bootstrap.min.css
-stylesheets[all][] = css/bootstrap-responsive.min.css
+stylesheets[all][] = bootstrap/bootstrap.min.css
+stylesheets[all][] = bootstrap/bootstrap-responsive.min.css
 stylesheets[all][] = css/styles.css
 
 ; If you wish to use conditional stylesheets, you should install the
@@ -67,7 +67,7 @@ stylesheets[all][] = css/styles.css
 
 ; Optionally add some JavaScripts to your theme.
 
-scripts[] = js/bootstrap.min.js
+scripts[] = bootstrap/bootstrap.min.js
 scripts[] = js/script.js
 
 
