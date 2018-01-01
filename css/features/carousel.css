@@ -1,3 +1,13 @@
+.carouselView .carousel-control {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  top: 50%;
+}
+
 .carouselView .views-row {
   margin: 0 !important;
 }
@@ -20,6 +30,10 @@
 .carouselView img:hover {
   -webkit-filter: none !important;
           filter: none !important;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  margin-top: 0px;
 }
 
 /*# sourceMappingURL=carousel.css.map */

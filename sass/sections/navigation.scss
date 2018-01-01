@@ -163,7 +163,17 @@
   width: 100%;
   background-color: transparentize($ctvwhite, 0.05);
   z-index: 10;
-
+  & .form-item-search-block-form {
+    & input[name="search_block_form"] {
+      width: 100%;
+      height: auto;
+    }
+  }
+  & .form-actions {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
   &.toggled-on {
     // overflow: scroll;
     overflow: auto;

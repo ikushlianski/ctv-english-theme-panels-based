@@ -2,6 +2,13 @@
 
 .carouselView {
 
+  & .carousel-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+  }
+
   & .views-row {
     margin: 0!important;
   }
@@ -24,4 +31,8 @@
       filter: none!important;
     }
   }
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  margin-top: 0px;
 }

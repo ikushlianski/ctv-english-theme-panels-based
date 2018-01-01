@@ -1,3 +1,19 @@
+.fp_categoryLink {
+  display: table;
+  text-decoration: none;
+  background-color: #ef5223;
+  color: white;
+  font-size: 0.7em;
+  margin: 1em 0;
+  padding: 0 0.5em;
+  pointer-events: initial;
+  line-height: normal;
+}
+
+.fp_categoryLink:hover {
+  color: white;
+}
+
 #fp-other-content-wrapper {
   display: -webkit-box;
   display: flex;
@@ -10,6 +26,21 @@
 
 #front-page-content-promoted {
   width: 100%;
+}
+
+.itemTitle {
+  pointer-events: none;
+  position: absolute;
+  bottom: 0;
+  left: 1em;
+  right: 1em;
+  line-height: normal;
+}
+
+.itemTitleText {
+  background-color: rgba(34, 34, 34, 0.9);
+  color: white;
+  font-weight: bold;
 }
 
 .node-type-home-page #main {
@@ -55,23 +86,24 @@
 }
 
 .region-fp-three-submain-sections > * {
-  flex-basis: 200px;
+  flex-basis: 300px;
   -webkit-box-flex: 1;
           flex-grow: 1;
 }
 
 .region-fp-media {
-  background-color: #222;
-  padding: 2em;
+  background-color: #555;
+  padding: 1em;
   margin-bottom: 1em;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 767px) {
   .region-fp-media {
     margin-left: -1em;
     margin-right: -1em;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 
@@ -80,6 +112,17 @@
     margin-left: -1em;
     margin-right: -1em;
   }
+}
+
+.region-fp-media .block__title {
+  color: whitesmoke;
+  margin-left: 1rem;
+}
+
+.region-fp-media .itemWrapper {
+  background-position: center;
+  background-size: cover;
+  height: 28em;
 }
 
 .region-fp-media .fp-media-header {
@@ -93,6 +136,19 @@
   background-color: transparent;
 }
 
+.region-fp-media .block-views {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.region-fp-media .block-views .views-row {
+  background-color: transparent;
+}
+
+.region-fp-media .block-views .views-row a {
+  color: whitesmoke;
+}
+
 .region-fp-media .block {
   margin: 0;
   -webkit-box-flex: 1;
@@ -101,12 +157,34 @@
 
 .region-fp-media .block:first-child {
   flex-basis: 300px;
+  padding: 0;
+  margin: 0.5em;
+  margin-right: 0em;
+  margin-left: 0em;
+}
+
+.region-fp-media .block:first-child .view {
+  margin-right: -1em;
+  margin-left: 1em;
+}
+
+.region-fp-media .block:first-child .view-content {
+  margin-right: 1em;
+}
+
+.region-fp-media .block:first-child .views-row {
+  margin-right: 1em;
 }
 
 .region-fp-media .block:last-child {
-  flex-basis: 300px;
+  flex-basis: 450px;
   -webkit-box-flex: 1;
           flex-grow: 1;
+  padding: 0;
+  margin: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
@@ -116,26 +194,74 @@
   }
 }
 
-.region-fp-other1, .region-fp-other2 {
+.region-fp-media .block:last-child .view {
+  margin-right: -1em;
+  margin-left: 0em;
+}
+
+.region-fp-media .block:last-child .view-content {
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.region-fp-media .block:last-child .views-row {
+  flex-basis: 150px;
+  margin-right: 1em;
+  -webkit-box-flex: 0;
+          flex-grow: 0;
+}
+
+@media (min-width: 768px) {
+  .region-fp-media .block:last-child .views-row {
+    -webkit-box-flex: 1;
+            flex-grow: 1;
+  }
+}
+
+#fp-other-content-1 {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
 }
 
-.region-fp-other1 > *, .region-fp-other2 > * {
+#fp-other-content-1 > * {
   -webkit-box-flex: 1;
           flex-grow: 1;
 }
 
-@media (max-width: 950px) {
-  .region-fp-other1 .view-content, .region-fp-other2 .view-content {
-    -webkit-box-pack: center;
-            justify-content: center;
-  }
-  .region-fp-other1 .view-content .views-row, .region-fp-other2 .view-content .views-row {
-    -webkit-box-flex: 1;
-            flex-grow: 1;
-  }
+#fp-other-content-1 #block-views-belarus-tourism-news-default {
+  flex-basis: 55%;
+}
+
+#fp-other-content-1 #block-views-belarus-tourism-news-default a:hover {
+  text-decoration: none;
+}
+
+#fp-other-content-1 #block-views-front-page-famous-belarusians-default {
+  flex-basis: 400px;
+}
+
+#fp-other-content-2 {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#fp-other-content-2 > * {
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+}
+
+#fp-other-content-2 #block-views-front-page-information-technologies-block {
+  flex-basis: 400px;
+}
+
+#fp-other-content-2 #block-views-front-page-cat-tourism-block {
+  flex-basis: 55%;
+}
+
+#fp-other-content-2 #block-views-front-page-cat-tourism-block a:hover {
+  text-decoration: none;
 }
 
 #latestFromBelarusTabContent .block-views {
@@ -168,13 +294,28 @@
   margin-right: -1em;
   -webkit-box-flex: 1;
           flex-grow: 1;
+  margin-right: 0.5em;
+  margin-left: -0.75em;
+}
+
+.recommended-content-wrapper > .inside .panels-flexible-column-first > .inside {
+  margin: 0 0.5em;
+  margin-right: -1.50em;
+  margin-left: 1em;
 }
 
 .recommended-content-wrapper > .inside .panels-flexible-column-last {
   flex-basis: 300px;
   -webkit-box-flex: 1;
           flex-grow: 1;
-  margin-right: -1em;
+  margin-right: -1.25em;
+  margin-left: 0em;
+}
+
+.recommended-content-wrapper > .inside .panels-flexible-column-last > .inside {
+  margin: 0 0.5em;
+  margin-right: 0.25em;
+  margin-left: -0.5em;
 }
 
 .recommended-content-wrapper > .inside .panels-flexible-column-last .block-views {

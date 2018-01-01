@@ -200,6 +200,17 @@
   }
 }
 
+.nav-group-mobile .form-item-search-block-form input[name="search_block_form"] {
+  width: 100%;
+  height: auto;
+}
+
+.nav-group-mobile .form-actions {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
 .nav-group-mobile.toggled-on {
   overflow: auto;
   height: 100vh;

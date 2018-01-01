@@ -98,3 +98,24 @@
     background-color: transparent;
   }
 }
+// have to style individual blocks by Id since drupal is not picking up classes from 'block CSS class' field
+#block-views-eng-new-front-page-4-editor-s-picks {
+  @extend .block.block_featured;
+  & .view .views-field-title a {
+    color: $ctvwhite;
+  }
+}
+
+#block-views-front-page-famous-belarusians-default {
+  @extend .fp-highlighted;
+  @extend .fp-highlighted_orange;
+}
+
+#block-views-front-page-information-technologies-block {
+  @extend .fp-highlighted_blue;
+}
+#block-views-front-page-cat-tourism-block {
+  & .view {
+    margin-right: -0.5em;
+  }
+}

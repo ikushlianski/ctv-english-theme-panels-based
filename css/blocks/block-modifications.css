@@ -12,31 +12,31 @@
   margin-bottom: 0;
 }
 
-.block.fp-highlighted {
+.block.fp-highlighted, .block#block-views-front-page-famous-belarusians-default {
   background-color: #f0f3f7;
 }
 
-.block.fp-highlighted_blue {
+.block.fp-highlighted_blue, .block#block-views-front-page-information-technologies-block {
   background-color: #f0f3f7;
 }
 
-.block.fp-highlighted_blue .block__title {
+.block.fp-highlighted_blue .block__title, .block#block-views-front-page-information-technologies-block .block__title {
   color: #4e729a !important;
 }
 
-.block.fp-highlighted_blue .block__title a {
+.block.fp-highlighted_blue .block__title a, .block#block-views-front-page-information-technologies-block .block__title a {
   color: #4e729a !important;
 }
 
-.block.fp-highlighted_orange {
+.block.fp-highlighted_orange, .block#block-views-front-page-famous-belarusians-default {
   background-color: #ef5223;
 }
 
-.block.fp-highlighted_orange .block__title {
+.block.fp-highlighted_orange .block__title, .block#block-views-front-page-famous-belarusians-default .block__title {
   color: whitesmoke !important;
 }
 
-.block.fp-highlighted_orange a {
+.block.fp-highlighted_orange a, .block#block-views-front-page-famous-belarusians-default a {
   color: whitesmoke !important;
 }
 
@@ -102,16 +102,24 @@
   background-color: #333;
 }
 
-.block.block_featured {
+.block.block_featured, #block-views-eng-new-front-page-4-editor-s-picks {
   background-color: #4e729a;
 }
 
-.block.block_featured .block__title {
+.block.block_featured .block__title, #block-views-eng-new-front-page-4-editor-s-picks .block__title {
   color: whitesmoke;
 }
 
 .block.noBackgroundColor {
   background-color: transparent;
+}
+
+#block-views-eng-new-front-page-4-editor-s-picks .view .views-field-title a {
+  color: whitesmoke;
+}
+
+#block-views-front-page-cat-tourism-block .view {
+  margin-right: -0.5em;
 }
 
 /*# sourceMappingURL=block-modifications.css.map */
