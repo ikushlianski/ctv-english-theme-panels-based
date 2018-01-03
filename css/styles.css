@@ -36,7 +36,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   min-height: 100%;
-  background-image: url("/sites/all/themes/ctvenglishtheme2prod/images-source/abstract-geometric-pattern-background.jpg");
+  background-image: url("/sites/all/themes/ctvenglishtheme2prod/images-source/geometric.jpg");
 }
 
 @media print {
@@ -2421,12 +2421,16 @@ twitterwidget {
 }
 
 .nav-group1-desktop {
-  height: 6em;
+  height: 5em;
   margin: 0 auto;
   background-color: #3d5978;
   -webkit-box-pack: start;
           justify-content: flex-start;
   position: relative;
+  transition: position 1s;
+  left: 0;
+  right: 0;
+  z-index: 5;
 }
 
 .nav-group1-desktop a {
@@ -2682,6 +2686,8 @@ figcaption a:visited {
   display: flex;
   -webkit-box-pack: justify;
           justify-content: space-between;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .main > .inside .content {
@@ -3343,7 +3349,12 @@ figcaption a:visited {
           justify-content: center;
   -webkit-box-align: start;
           align-items: flex-start;
-  margin-left: -0.5em;
+  margin-left: -1em;
+  margin-right: -1em;
+}
+
+.page-node .recommended-content-wrapper > .inside {
+  margin-right: -0.6em !important;
 }
 
 .recommended-content-wrapper > .inside .panels-flexible-column-first {
@@ -3351,28 +3362,20 @@ figcaption a:visited {
   margin-right: -1em;
   -webkit-box-flex: 1;
           flex-grow: 1;
-  margin-right: 1em;
-  margin-left: -0.75em;
+  margin-right: -0.5em;
+  margin-left: 0.5em;
 }
 
 .recommended-content-wrapper > .inside .panels-flexible-column-first > .inside {
   margin: 0 0.5em;
-  margin-right: -2em;
-  margin-left: 1.25em;
 }
 
 .recommended-content-wrapper > .inside .panels-flexible-column-last {
   flex-basis: 300px;
   -webkit-box-flex: 1;
           flex-grow: 1;
-  margin-right: -0.9em;
-  margin-left: 0.5em;
-}
-
-.recommended-content-wrapper > .inside .panels-flexible-column-last > .inside {
-  margin: 0 0.5em;
-  margin-right: 0.25em;
-  margin-left: -1em;
+  margin-right: 0em;
+  margin-left: 0em;
 }
 
 .recommended-content-wrapper > .inside .panels-flexible-column-last .block-views {
@@ -3631,6 +3634,15 @@ figcaption a:visited {
     z-index: 10;
     flex-wrap: wrap;
   }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .region-sitemap-nav.toggled-on {
+    padding: 1em 1em;
+  }
+}
+
+@media (min-width: 768px) {
   .region-sitemap-nav.toggled-on .form-actions {
     background-color: transparent;
     border: none;

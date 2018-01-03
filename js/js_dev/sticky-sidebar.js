@@ -22,16 +22,17 @@
   };
 
   $(document).ready(function(){
-    if ( $("#sidebar-first").length != 0 ) {
-      let sidebar = $("#sidebar-first .section").eq(0);
-      let lastSidebarElem = $("#sidebar-first .section").children().first().eq(0);
+    if ( $(".sidebar-first").length != 0 ) {
+      let sidebar = $(".sidebar-first").eq(0);
+      let lastSidebarElem = $(".sidebar-first").find('.block').first().eq(0);
       let lastSidebarElemWidth = lastSidebarElem.width();
       let lastSidebarElemHeight = lastSidebarElem.height();
       let lastSidebarElemOffset = lastSidebarElem.offset().top;
-      let mainContentHeight = $('.node .content').height();
-      let mainContentEndY = $('.node .content').offset().top + mainContentHeight;
-      let sidebarContentInitHeight = $("#sidebar-first .section").height();
-      let sidebarContentEndY = $("#sidebar-first .section").offset().top + sidebarContentInitHeight;
+      let mainContentHeight = $('.main .content').height();
+      let mainContentEndY = $('.main .content').offset().top + mainContentHeight;
+      let sidebarContentInitHeight = $(".sidebar-first > .inside").height();
+      let sidebarContentEndY = $(".sidebar-first").offset().top + sidebarContentInitHeight;
+      var stickyMenuHeight = $(".nav-group1-desktop").height();
       var toolbarHeight = $("#toolbar").height();
       lastSidebarElem.width(lastSidebarElemWidth);
 
@@ -43,9 +44,17 @@
         }
       }
 
+      function checkForStickyMenu() {
+        if ( $(".nav-group1-desktop").css("position") == 'fixed' ) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
       if (mainContentHeight < sidebarContentInitHeight) {
         while (mainContentHeight < sidebar.height()) {
-          sidebar.children().last().hide();
+          sidebar.find(".block").last().hide();
         }
       }
 
@@ -54,12 +63,15 @@
           // we scroll below last sidebar elem
           if ( $(window).scrollTop() >= sidebarContentEndY ) {
             // are we inside the main content height minus the height of the last sidebar elem?
-            if ( $(window).scrollTop() < (mainContentEndY - lastSidebarElemHeight - toolbarHeight) ) {
+            if ( $(window).scrollTop() < (mainContentEndY - lastSidebarElemHeight - toolbarHeight - stickyMenuHeight*3) ) {
               if ( !lastSidebarElem.hasClass("sticky") ) {
                 // we scroll below it and don't have sticky class
                 lastSidebarElem.addClass("sticky");
                 if ( checkForToolbar() ) {
                   lastSidebarElem.css({"top": lastSidebarElem.scrollTop() + toolbarHeight});
+                };
+                if ( checkForStickyMenu() ) {
+                  lastSidebarElem.css({"top": lastSidebarElem.scrollTop() + stickyMenuHeight});
                 };
               }
             } else {
@@ -71,7 +83,7 @@
             lastSidebarElem.css({"top": 0});
           }
 
-          if ( $(window).scrollTop() < (mainContentEndY - lastSidebarElemHeight - toolbarHeight) ) {
+          if ( $(window).scrollTop() < (mainContentEndY - lastSidebarElemHeight - toolbarHeight - stickyMenuHeight) ) {
             // we scroll above last sidebar elem and it already has stick class
             // are we inside the main content height?
             if ( lastSidebarElem.hasClass("sticky") ) {
@@ -79,6 +91,11 @@
                 lastSidebarElem.removeClass("at-bottom");
                 if ( checkForToolbar() ) {
                   lastSidebarElem.css({"top": lastSidebarElem.scrollTop() + toolbarHeight});
+                } else {
+                  lastSidebarElem.css({"top": 0});
+                }
+                if ( checkForStickyMenu() ) {
+                  lastSidebarElem.css({"top": lastSidebarElem.scrollTop() + stickyMenuHeight});
                 } else {
                   lastSidebarElem.css({"top": 0});
                 }

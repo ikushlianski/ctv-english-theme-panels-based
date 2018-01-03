@@ -256,28 +256,32 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    margin-left: -0.5em;
+    margin-left: -1em;
+    margin-right: -1em;
+    .page-node & {
+      margin-right: -0.6em!important;
+    }
     & .panels-flexible-column-first {
       flex-basis: 65%;
       margin-right: -1em;
       flex-grow: 1;
-      margin-right: 1em;
-      margin-left: -0.75em;
+      margin-right: -0.5em;
+      margin-left: 0.5em;
       & > .inside {
         margin: 0 0.5em;
-        margin-right: -2em;
-        margin-left: 1.25em;
+        // margin-right: -2em;
+        // margin-left: 1.25em;
       }
     }
     & .panels-flexible-column-last {
       flex-basis: 300px;
       flex-grow: 1;
-      margin-right: -0.9em;
-      margin-left: 0.5em;
+      margin-right: 0em;
+      margin-left: 0em;
       & > .inside {
-        margin: 0 0.5em;
-        margin-right: 0.25em;
-        margin-left: -1em;
+        // margin: 0 0.5em;
+        // margin-right: 0.25em;
+        // margin-left: -1em;
       }
       & .block-views {
         margin-bottom: 0.5em;

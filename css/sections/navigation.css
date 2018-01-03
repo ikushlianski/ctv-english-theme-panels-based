@@ -146,12 +146,16 @@
 }
 
 .nav-group1-desktop {
-  height: 6em;
+  height: 5em;
   margin: 0 auto;
   background-color: #3d5978;
   -webkit-box-pack: start;
           justify-content: flex-start;
   position: relative;
+  transition: position 1s;
+  left: 0;
+  right: 0;
+  z-index: 5;
 }
 
 .nav-group1-desktop a {

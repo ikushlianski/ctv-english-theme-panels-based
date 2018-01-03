@@ -46,6 +46,8 @@ figcaption a:visited {
   display: flex;
   -webkit-box-pack: justify;
           justify-content: space-between;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .main > .inside .content {

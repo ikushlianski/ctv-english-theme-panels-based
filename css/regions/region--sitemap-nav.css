@@ -18,6 +18,15 @@
     z-index: 10;
     flex-wrap: wrap;
   }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .region-sitemap-nav.toggled-on {
+    padding: 1em 1em;
+  }
+}
+
+@media (min-width: 768px) {
   .region-sitemap-nav.toggled-on .form-actions {
     background-color: transparent;
     border: none;

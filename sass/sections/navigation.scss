@@ -124,11 +124,16 @@
 }
 
 .nav-group1-desktop {
-  height: 6em;
+  height: 5em;
   margin: 0 auto;
   background-color: $ctvblue_darker;
   justify-content: flex-start;
   position: relative;
+  transition: position 1s;
+  // props for position fixed
+  left: 0;
+  right: 0;
+  z-index: 5;
   & a {
     font-weight: bold;
     display: flex;
