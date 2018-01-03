@@ -60,6 +60,9 @@ figcaption {
       @media (max-width: 767px) {
         display: none;
       }
+      & > .inside {
+        position: relative;
+      }
     }
   }
 }

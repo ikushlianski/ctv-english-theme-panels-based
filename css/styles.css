@@ -2710,6 +2710,10 @@ figcaption a:visited {
   }
 }
 
+.main > .inside .sidebar-first > .inside {
+  position: relative;
+}
+
 .mainImageContainer {
   width: 100%;
   position: relative;
