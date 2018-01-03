@@ -12,8 +12,13 @@
 
 .pane-recommended-from-taxonomy {
   padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: -1em;
+  background-color: $ctvblue_darker;
   & .pane__title {
     margin-left: 1.1em;
+    color: $ctvwhite;
   }
 }
 
@@ -43,7 +48,7 @@
 }
 
 .view-recommended-from-taxonomy {
-  margin-right: -1em;
+  margin-right: 0em;
   & .view-content {
     margin-right: -0.5em;
   }

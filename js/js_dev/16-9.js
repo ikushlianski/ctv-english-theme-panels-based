@@ -102,16 +102,16 @@
     // });
     //
     // // fixing ie 11 lack of object-fit support
-    // if ( ! Modernizr.objectfit ) {
-    //   $('.view img').each(function () {
-    //     $(this).css({ height: "auto", width: "100%"});
-    //     if ($(this).css("display") == "none") {
-    //       $(this).css("display", "block");
-    //       $(this).css({ height: "auto", width: "100%"});
-    //       $(this).css("display", "");
-    //     }
-    //   });
-    // }
+    if ( ! Modernizr.objectfit ) {
+      $('.view img').each(function () {
+        $(this).css({ height: "auto", width: "100%"});
+        if ($(this).css("display") == "none") {
+          $(this).css("display", "block");
+          $(this).css({ height: "auto", width: "100%"});
+          $(this).css("display", "");
+        }
+      });
+    }
 
   });
 

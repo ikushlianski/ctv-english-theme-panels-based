@@ -11,6 +11,10 @@ blockquote p {
   margin: 0.5em;
 }
 
+.content > .inside {
+  padding-right: 0;
+}
+
 figure {
   margin: 0 0;
   height: 100%;
@@ -34,6 +38,33 @@ figcaption a:visited {
 @media (min-width: 768px) {
   figcaption {
     padding: 0em;
+  }
+}
+
+.main > .inside {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.main > .inside .content {
+  flex-basis: 62%;
+}
+
+@media (max-width: 767px) {
+  .main > .inside .content {
+    flex-basis: 100%;
+  }
+}
+
+.main > .inside .sidebar-first {
+  flex-basis: 35%;
+}
+
+@media (max-width: 767px) {
+  .main > .inside .sidebar-first {
+    display: none;
   }
 }
 
@@ -66,8 +97,9 @@ figcaption a:visited {
   }
 }
 
-.nodeBody {
-  margin-bottom: 2em;
+.nodeBody iframe {
+  position: relative;
+  width: 100%;
 }
 
 .nodeCategory_largeScreens {
@@ -85,23 +117,6 @@ figcaption a:visited {
   flex-wrap: wrap;
   margin-top: 0em;
   margin-bottom: -1em;
-}
-
-.nodeMeta .socialButtons {
-  display: -webkit-box;
-  display: flex;
-}
-
-.nodeMeta .socialButtons .socialButton {
-  padding: 0.2em;
-}
-
-.nodeMeta .socialButtons .socialButton:first-child {
-  padding-left: 0;
-}
-
-.nodeMeta .socialButtons .socialButton:last-child {
-  padding-right: 0;
 }
 
 @media (min-width: 768px) {
@@ -134,6 +149,25 @@ figcaption a:visited {
 
 .postDate {
   color: grey;
+}
+
+.socialButtons {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.socialButtons .socialButton {
+  padding: 0.2em;
+}
+
+.socialButtons .socialButton:first-child {
+  padding-left: 0;
+}
+
+.socialButtons .socialButton:last-child {
+  padding-right: 0;
 }
 
 .summary {

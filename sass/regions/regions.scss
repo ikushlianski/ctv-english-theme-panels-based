@@ -48,6 +48,7 @@
 .node-type-home-page #main {
   flex-direction: column;
   border-bottom: none;
+  margin-bottom: -0.5em;
 }
 
 .not-logged-in {
@@ -228,11 +229,7 @@
   }
 }
 
-.region-related-content {
-  // background-color: hsla(212, 33%, 40%, 0.1);
-  // background: linear-gradient(transparent, rgba(68, 100, 136, 0.15));
-  // padding: 0.5em;
-}
+
 
 .region-content-recommended {
   // display: flex;
@@ -259,27 +256,28 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
+    margin-left: -0.5em;
     & .panels-flexible-column-first {
       flex-basis: 65%;
       margin-right: -1em;
       flex-grow: 1;
-      margin-right: 0.5em;
+      margin-right: 1em;
       margin-left: -0.75em;
       & > .inside {
         margin: 0 0.5em;
-        margin-right: -1.50em;
-        margin-left: 1em;
+        margin-right: -2em;
+        margin-left: 1.25em;
       }
     }
     & .panels-flexible-column-last {
       flex-basis: 300px;
       flex-grow: 1;
-      margin-right: -1.25em;
-      margin-left: 0em;
+      margin-right: -0.9em;
+      margin-left: 0.5em;
       & > .inside {
         margin: 0 0.5em;
         margin-right: 0.25em;
-        margin-left: -0.5em;
+        margin-left: -1em;
       }
       & .block-views {
         margin-bottom: 0.5em;
@@ -292,6 +290,18 @@
   display: none;
 }
 
+.sidebar-first {
+  & > .inside {
+    & .block-views {
+      margin-left: 0;
+      margin-right: 0;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
 #sidebar-second {
   display: none;
 }
@@ -302,32 +312,56 @@
   }
 }
 
-@media (min-width: 768px) {
-  #content, #content-recommended, #fp-content-by-category {
-    flex-basis: 65%;
+.recommended-content-wrapper, .region-related-content, .main {
+  margin: 0 auto!important;
+  width: 98%;
+  @media (min-width: 960px) {
+    width: 85%;
   }
-  #fp-sidebar {
-    display: initial;
-    margin: 0!important;
-    padding: 0 0 0 1em;
-    flex-basis: 35%;
-  }
-  #sidebar-first, #fp-sidebar {
-    display: initial;
-    margin: 0 1em 0 1em;
-    padding: 0 0 0 1em;
-    flex-basis: 35%;
-  }
-  #sidebar-recommended {
-    display: initial;
-    margin: 0 1em 0 1em;
-    flex-basis: 35%;
-    padding: 0;
-  }
-  #sidebar-second {
-    display: initial;
+  .page-taxonomy & {
+    width: 94%;
   }
 }
+
+.region-related-content {
+  & > .inside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -1em;
+    flex-direction: column;
+    & > div {
+      width: 98%;
+    }
+  }
+}
+
+// @media (min-width: 768px) {
+//   #content, #content-recommended, #fp-content-by-category {
+//     flex-basis: 65%;
+//   }
+//   #fp-sidebar {
+//     display: initial;
+//     margin: 0!important;
+//     padding: 0 0 0 1em;
+//     flex-basis: 35%;
+//   }
+//   #sidebar-first, #fp-sidebar {
+//     display: initial;
+//     margin: 0 1em 0 1em;
+//     padding: 0 0 0 1em;
+//     flex-basis: 35%;
+//   }
+//   #sidebar-recommended {
+//     display: initial;
+//     margin: 0 1em 0 1em;
+//     flex-basis: 35%;
+//     padding: 0;
+//   }
+//   #sidebar-second {
+//     display: initial;
+//   }
+// }
 
 // fixes for ie 11
 #front-page-content-promoted {

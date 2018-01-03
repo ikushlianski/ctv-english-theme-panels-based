@@ -15,6 +15,12 @@ blockquote {
   }
 }
 
+.content {
+  & > .inside {
+    padding-right: 0;
+  }
+}
+
 
 figure {
   margin: 0 0;
@@ -34,6 +40,25 @@ figcaption {
   text-align: right;
   @media (min-width: 768px) {
     padding: 0em;
+  }
+}
+
+.main {
+  & > .inside {
+    display: flex;
+    justify-content: space-between;
+    & .content {
+      flex-basis: 62%;
+      @media (max-width: 767px) {
+        flex-basis: 100%;
+      }
+    }
+    & .sidebar-first {
+      flex-basis: 35%;
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
   }
 }
 
@@ -60,7 +85,11 @@ figcaption {
   }
 }
 .nodeBody {
-  margin-bottom: 2em;
+  //margin-bottom: 2em;
+  & iframe {
+    position: relative;
+    width: 100%;
+  }
 }
 .nodeCategory {
   &_largeScreens {
@@ -76,18 +105,6 @@ figcaption {
   flex-wrap: wrap;
   margin-top: 0em;
   margin-bottom: -1em;
-  & .socialButtons {
-    display: flex;
-    & .socialButton {
-      padding: 0.2em;
-      &:first-child {
-        padding-left:0;
-      }
-      &:last-child {
-        padding-right:0;
-      }
-    }
-  }
   @media (min-width: 768px) {
     padding: 1em 0;
   }
@@ -117,6 +134,20 @@ figcaption {
 }
 .postDate {
   color: $grey;
+}
+
+.socialButtons {
+  display: flex;
+  justify-content: center;
+  & .socialButton {
+    padding: 0.2em;
+    &:first-child {
+      padding-left:0;
+    }
+    &:last-child {
+      padding-right:0;
+    }
+  }
 }
 
 .summary {

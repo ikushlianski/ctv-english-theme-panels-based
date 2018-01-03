@@ -8,10 +8,15 @@
 
 .pane-recommended-from-taxonomy {
   padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: -1em;
+  background-color: #3d5978;
 }
 
 .pane-recommended-from-taxonomy .pane__title {
   margin-left: 1.1em;
+  color: whitesmoke;
 }
 
 .view.view-taxonomy-term .view-content, .view.view-recommended-from-taxonomy .view-content, .view.view-taxonomy-term-ilya-test .view-content, .view.view-taxonomy-term-eng .view-content {
@@ -41,7 +46,7 @@
 }
 
 .view-recommended-from-taxonomy {
-  margin-right: -1em;
+  margin-right: 0em;
 }
 
 .view-recommended-from-taxonomy .view-content {
