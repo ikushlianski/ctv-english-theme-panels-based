@@ -25,6 +25,13 @@
 
     // Initialize elements' behavior
     $('.region-sitemap-nav').removeAttr('style');
+    $(".toggle_largeScreens.fa-bars").click(function(){
+      $('.nav-group1-desktop').css("position", "relative");
+      $('.region-sitemap-nav').css("top", $("#toolbar").length > 0 ? $("#toolbar").height() : 0 );
+    });
+    $(".toggle_largeScreens.fa-times").click(function(){
+      $('.nav-group1-desktop').css("position", "fixed");
+    });
 
     // mobile menu toggle behavior
     $('.toggle').on('click', function () {
