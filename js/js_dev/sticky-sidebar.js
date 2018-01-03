@@ -21,7 +21,7 @@
     }
   };
 
-  $(document).ready(function(){
+  $(window).load(function(){
     if ( $(".sidebar-first").length != 0 ) {
       let sidebar = $(".sidebar-first").eq(0);
       let lastSidebarElem = $(".sidebar-first").find('.block').first().eq(0);
@@ -63,7 +63,7 @@
           // we scroll below last sidebar elem
           if ( $(window).scrollTop() >= sidebarContentEndY ) {
             // are we inside the main content height minus the height of the last sidebar elem?
-            if ( $(window).scrollTop() < (mainContentEndY - lastSidebarElemHeight - toolbarHeight - stickyMenuHeight*3) ) {
+            if ( $(window).scrollTop() < (mainContentEndY - lastSidebarElemHeight - toolbarHeight - stickyMenuHeight) ) {
               if ( !lastSidebarElem.hasClass("sticky") ) {
                 // we scroll below it and don't have sticky class
                 lastSidebarElem.addClass("sticky");
