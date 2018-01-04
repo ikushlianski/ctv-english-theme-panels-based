@@ -367,13 +367,27 @@
 //   }
 // }
 
+
 // fixes for ie 11
-#front-page-content-promoted {
-  height: 100%;
-}
-#fp-other-content-wrapper {
-  height: 100%;
-  & #fp-other-content-1 {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+  #front-page-content-promoted {
+    height: 100%;
+  }
+  #fp-other-content-wrapper {
+    height: 100%;
+    & #fp-other-content-1 {
+      height: 100%;
+    }
+    & #fp-other-content-2 {
+      height: 130%;
+    }
+  }
+
+  .recommended-content-wrapper > .inside {
+    width: 110%;
+  }
+  .region-related-content > div > div {
     height: 100%;
   }
 }

@@ -64,6 +64,7 @@
 .logoAndCompanyName img {
   width: 4em;
   height: auto;
+  height: 100%;
 }
 
 .logoAndCompanyName a {

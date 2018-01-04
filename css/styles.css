@@ -2339,6 +2339,7 @@ twitterwidget {
 .logoAndCompanyName img {
   width: 4em;
   height: auto;
+  height: 100%;
 }
 
 .logoAndCompanyName a {
@@ -3437,16 +3438,25 @@ figcaption a:visited {
   width: 98%;
 }
 
-#front-page-content-promoted {
-  height: 100%;
-}
-
-#fp-other-content-wrapper {
-  height: 100%;
-}
-
-#fp-other-content-wrapper #fp-other-content-1 {
-  height: 100%;
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #front-page-content-promoted {
+    height: 100%;
+  }
+  #fp-other-content-wrapper {
+    height: 100%;
+  }
+  #fp-other-content-wrapper #fp-other-content-1 {
+    height: 100%;
+  }
+  #fp-other-content-wrapper #fp-other-content-2 {
+    height: 130%;
+  }
+  .recommended-content-wrapper > .inside {
+    width: 110%;
+  }
+  .region-related-content > div > div {
+    height: 100%;
+  }
 }
 
 #footer {

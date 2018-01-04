@@ -16,6 +16,7 @@
         $('#page').css("margin-top", "5em");
         $('.nav-group1-desktop').css("position", "fixed");
         $('.nav-group1-desktop').css("top", "0");
+        $('.nav-group1-desktop').css("width", "100%");
         if (checkForToolbar()) {
           $('.nav-group1-desktop').css("top", $("#toolbar").height());
         }
