@@ -14,12 +14,7 @@
 // - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
 (function ($, Drupal) {
 
-  // To understand behaviors, see https://drupal.org/node/756722#behaviors
-  Drupal.behaviors.my_custom_behavior = {
-    attach: function (context, settings) {
-      // Place your code here.
-    }
-  };
+
 
   $(window).load(function(){
     if ( $(".sidebar-first").length != 0 ) {
@@ -35,6 +30,11 @@
       var stickyMenuHeight = $(".nav-group1-desktop").height();
       var toolbarHeight = $("#toolbar").height();
       lastSidebarElem.width(lastSidebarElemWidth);
+      var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+      if (isIE11) {
+        console.log('this is IE11, do not execute this!');
+        return;
+      }
 
       function checkForToolbar() {
         if ( $("#toolbar") ) {
@@ -59,6 +59,7 @@
       }
 
       $(window).on("scroll", function(){
+        console.log('this should not show in IE 11');
         let mainContentHeight = $('.main .content').height();
         let mainContentEndY = $('.main .content').offset().top + mainContentHeight;
         if ( mainContentHeight > (sidebarContentInitHeight * 1.75) ) {
@@ -83,12 +84,12 @@
           if ( $(window).scrollTop() < (mainContentEndY - lastSidebarElemHeight - checkForStickyMenu() - checkForToolbar() ) ) {
             // we scroll above last sidebar elem and it already has stick class
             // are we inside the main content height?
-            if ( lastSidebarElem.hasClass("sticky") ) {
+            // if ( lastSidebarElem.hasClass("sticky") ) {
               if (lastSidebarElem.hasClass("at-bottom")) {
                 lastSidebarElem.removeClass("at-bottom");
                 lastSidebarElem.css({"top": 0 + checkForStickyMenu() + checkForToolbar()});
               }
-            }
+            // }
           }
 
           if ( $(window).scrollTop() <= sidebarContentInitHeight ) {

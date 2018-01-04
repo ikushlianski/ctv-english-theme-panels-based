@@ -199,7 +199,7 @@ figcaption {
   .nodeCategory {
     &_largeScreens {
       display: block;
-      display: initial;
+      //display: initial;
       position: absolute;
       top: 2.5em;
       right: 0;
@@ -243,8 +243,8 @@ figcaption {
   }
 
   .title_largeScreens {
+    // display: initial;
     display: block;
-    display: initial;
     font-size: 1.75em;
     line-height: normal;
     bottom: 0em;
