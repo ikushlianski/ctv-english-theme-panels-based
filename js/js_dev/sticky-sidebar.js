@@ -32,7 +32,6 @@
       lastSidebarElem.width(lastSidebarElemWidth);
       var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
       if (isIE11) {
-        console.log('this is IE11, do not execute this!');
         return;
       }
 
@@ -59,7 +58,6 @@
       }
 
       $(window).on("scroll", function(){
-        console.log('this should not show in IE 11');
         let mainContentHeight = $('.main .content').height();
         let mainContentEndY = $('.main .content').offset().top + mainContentHeight;
         if ( mainContentHeight > (sidebarContentInitHeight * 1.75) ) {
