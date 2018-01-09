@@ -157,7 +157,7 @@
 }
 
 .region-fp-media .block:first-child {
-  flex-basis: 300px;
+  flex-basis: 45%;
   padding: 0;
   margin: 0.5em;
   margin-right: 0em;
@@ -230,15 +230,15 @@
           flex-grow: 1;
 }
 
-#fp-other-content-1 #block-views-belarus-tourism-news-default {
+#fp-other-content-1 #block-views-eng-new-front-page-9-tourism {
   flex-basis: 55%;
 }
 
-#fp-other-content-1 #block-views-belarus-tourism-news-default a:hover {
+#fp-other-content-1 #block-views-eng-new-front-page-9-tourism a:hover {
   text-decoration: none;
 }
 
-#fp-other-content-1 #block-views-front-page-famous-belarusians-default {
+#fp-other-content-1 #block-views-eng-new-front-page-5-famous-belarusians {
   flex-basis: 400px;
 }
 
@@ -253,15 +253,15 @@
           flex-grow: 1;
 }
 
-#fp-other-content-2 #block-views-front-page-information-technologies-block {
+#fp-other-content-2 #block-views-eng-new-front-page-8-information-technologies {
   flex-basis: 400px;
 }
 
-#fp-other-content-2 #block-views-front-page-cat-tourism-block {
+#fp-other-content-2 #block-views-eng-new-front-page-6-sights {
   flex-basis: 55%;
 }
 
-#fp-other-content-2 #block-views-front-page-cat-tourism-block a:hover {
+#fp-other-content-2 #block-views-eng-new-front-page-6-sights a:hover {
   text-decoration: none;
 }
 

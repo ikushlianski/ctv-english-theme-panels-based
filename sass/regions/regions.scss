@@ -144,7 +144,7 @@
     margin: 0;
     flex-grow: 1;
     &:first-child {
-      flex-basis: 300px;
+      flex-basis: 45%;
       padding: 0;
       margin: 0.5em;
       margin-right: 0em;
@@ -196,7 +196,7 @@
   & > * {
     flex-grow: 1;
   }
-  & #block-views-belarus-tourism-news-default {
+  & #block-views-eng-new-front-page-9-tourism {
     flex-basis: 55%;
     & a {
       &:hover {
@@ -204,7 +204,7 @@
       }
     }
   }
-  & #block-views-front-page-famous-belarusians-default {
+  & #block-views-eng-new-front-page-5-famous-belarusians {
     flex-basis: 400px;
   }
 }
@@ -215,10 +215,10 @@
   & > * {
     flex-grow: 1;
   }
-  & #block-views-front-page-information-technologies-block {
+  & #block-views-eng-new-front-page-8-information-technologies {
     flex-basis: 400px;
   }
-  & #block-views-front-page-cat-tourism-block {
+  & #block-views-eng-new-front-page-6-sights  {
 
     flex-basis: 55%;
     & a {

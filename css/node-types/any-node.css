@@ -239,6 +239,7 @@ figcaption a:visited {
   #main {
     display: -webkit-box;
     display: flex;
+    flex-wrap: wrap;
   }
   .title_largeScreens {
     display: block;

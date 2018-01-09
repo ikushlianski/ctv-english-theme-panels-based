@@ -12,31 +12,31 @@
   margin-bottom: 0;
 }
 
-.block.fp-highlighted, .block#block-views-front-page-famous-belarusians-default {
+.block.fp-highlighted, .block#block-views-front-page-famous-belarusians-default, .block#block-views-eng-new-front-page-famous-belarusians, .block#block-views-eng-new-front-page-5-famous-belarusians {
   background-color: #f0f3f7;
 }
 
-.block.fp-highlighted_blue, .block#block-views-front-page-information-technologies-block {
+.block.fp-highlighted_blue, .block#block-views-front-page-information-technologies-block, .block#block-views-eng-new-front-page-information-technologies, .block#block-views-eng-new-front-page-8-information-technologies {
   background-color: #f0f3f7;
 }
 
-.block.fp-highlighted_blue .block__title, .block#block-views-front-page-information-technologies-block .block__title {
+.block.fp-highlighted_blue .block__title, .block#block-views-front-page-information-technologies-block .block__title, .block#block-views-eng-new-front-page-information-technologies .block__title, .block#block-views-eng-new-front-page-8-information-technologies .block__title {
   color: #4e729a !important;
 }
 
-.block.fp-highlighted_blue .block__title a, .block#block-views-front-page-information-technologies-block .block__title a {
+.block.fp-highlighted_blue .block__title a, .block#block-views-front-page-information-technologies-block .block__title a, .block#block-views-eng-new-front-page-information-technologies .block__title a, .block#block-views-eng-new-front-page-8-information-technologies .block__title a {
   color: #4e729a !important;
 }
 
-.block.fp-highlighted_orange, .block#block-views-front-page-famous-belarusians-default {
+.block.fp-highlighted_orange, .block#block-views-front-page-famous-belarusians-default, .block#block-views-eng-new-front-page-famous-belarusians, .block#block-views-eng-new-front-page-5-famous-belarusians {
   background-color: #ef5223;
 }
 
-.block.fp-highlighted_orange .block__title, .block#block-views-front-page-famous-belarusians-default .block__title {
+.block.fp-highlighted_orange .block__title, .block#block-views-front-page-famous-belarusians-default .block__title, .block#block-views-eng-new-front-page-famous-belarusians .block__title, .block#block-views-eng-new-front-page-5-famous-belarusians .block__title {
   color: whitesmoke !important;
 }
 
-.block.fp-highlighted_orange a, .block#block-views-front-page-famous-belarusians-default a {
+.block.fp-highlighted_orange a, .block#block-views-front-page-famous-belarusians-default a, .block#block-views-eng-new-front-page-famous-belarusians a, .block#block-views-eng-new-front-page-5-famous-belarusians a {
   color: whitesmoke !important;
 }
 
@@ -118,7 +118,7 @@
   color: whitesmoke;
 }
 
-#block-views-front-page-cat-tourism-block .view {
+#block-views-front-page-cat-tourism-block .view, #block-views-eng-new-front-page-9-tourism .view {
   margin-right: -0.5em;
 }
 
@@ -129,7 +129,6 @@
 }
 
 #block-views-eng-new-front-page-4-editor-s-picks {
-  margin-left: 1em;
   box-shadow: none;
 }
 

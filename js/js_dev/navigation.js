@@ -26,11 +26,13 @@
     // Initialize elements' behavior
     $('.region-sitemap-nav').removeAttr('style');
     $(".toggle_largeScreens.fa-bars").click(function(){
-      $('.nav-group1-desktop').css("position", "relative");
+      if ( $(window).scrollTop > $('.nav-group1-desktop').height() ) {
+        $('.nav-group1-desktop').css("visibility", "hidden");
+      }
       $('.region-sitemap-nav').css("top", $("#toolbar").length > 0 ? $("#toolbar").height() : 0 );
     });
     $(".toggle_largeScreens.fa-times").click(function(){
-      $('.nav-group1-desktop').css("position", "fixed");
+      $('.nav-group1-desktop').css("visibility", "visible");
     });
 
     // mobile menu toggle behavior
@@ -94,8 +96,8 @@
     // move top-fixed menu under toolbar if user logged in
     if ($('body').hasClass('logged-in')) {
       var toolbarHeight = $('div.toolbar').height();
-      if ($(".nav-group").css('position') == 'fixed') {
-        $(".nav-group").css({"top":toolbarHeight});
+      if ($(".nav-group-mobile").css('position') == 'fixed') {
+        $(".nav-group-mobile").css({"top":toolbarHeight});
       }
       // $(".messages").css({"marginTop":toolbarHeight});
     }

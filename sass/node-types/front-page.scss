@@ -78,23 +78,58 @@
     }
   }
 }
-.view-front-page-two-main, .view-display-id-front_page_two_main, {
+.view-front-page-two-main, .view-display-id-front_page_two_main {
   margin-left: 0.5em;
   margin-right: 0.5em;
   margin-bottom: -0.5em;
   & .views-row {
     margin: 0.5em!important;
     margin-top: 1em!important;
-  }
-  & a.fp_categoryLink {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 0 0.5em;
-    &:hover {
-      text-decoration: underline;
+    position: relative;
+    & img {
+      width: 100%;
+    }
+    & .views-field-field-cats {
+      position: absolute;
+      top: 1em;
+      left: 1em;
+      & .field-content > a {
+        background-color: $ctvorange;
+        color: white;
+        // font-size: 0.7em;
+        font-weight: bold;
+        margin: 1em 0;
+        padding: 0 0.5em;
+        pointer-events: initial;
+      }
+    }
+    & .views-field-title {
+      position: absolute;
+      bottom: 1em;
+      left: 1em;
+      right: 1em;
+      & .field-content > a {
+        display: inline;
+        line-height: normal;
+        background-color: rgba(34, 34, 34, 0.9);
+        color: white;
+        font-weight: bold;
+        font-size: 1.6em;
+        @media (max-width: 768px) {
+          font-size: 1.1em;
+        }
+      }
     }
   }
+  // & a.fp_categoryLink {
+  //   text-decoration: none;
+  //   color: white;
+  //   font-weight: bold;
+  //   padding: 0 0.5em;
+  //   &:hover {
+  //     text-decoration: underline;
+  //   }
+  // }
 }
 
 .view-display-id-front_page_three_main {
@@ -114,7 +149,7 @@
     // &:not(:first-child) {
     //   margin: 0em 0em 0.3em 0.5em!important;
     // }
-    & .views-field-field-category {
+    & .views-field-field-category, & .views-field-field-cats {
       position: absolute;
       top: 1em;
       left: 1em;
@@ -129,6 +164,47 @@
         padding: 0 0.5em;
         &:hover {
           text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.view-display-id-front_page_media_first {
+  & .views-row {
+    position: relative;
+    & img {
+      width: 100%;
+    }
+    & .views-field-field-cats {
+      position: absolute;
+      top: 2em;
+      right: 2em;
+      & .field-content > a {
+        background-color: $ctvorange;
+        color: white;
+        // font-size: 0.7em;
+        font-weight: bold;
+        margin: 1em 0;
+        padding: 0 0.5em;
+        pointer-events: initial;
+      }
+    }
+    & .views-field-title {
+      position: absolute;
+      bottom: 1em;
+      left: 1em;
+      right: 1em;
+      z-index: 1;
+      & .field-content > a {
+        display: inline;
+        line-height: normal;
+        background-color: rgba(34, 34, 34, 0.9);
+        color: white;
+        font-weight: bold;
+        font-size: 1.6em;
+        @media (max-width: 768px) {
+          font-size: 1.1em;
         }
       }
     }

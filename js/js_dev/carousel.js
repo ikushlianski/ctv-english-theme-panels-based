@@ -14,7 +14,7 @@
     $('.carousel').carousel({
       interval: false
     });
-    
+
 
   });
 

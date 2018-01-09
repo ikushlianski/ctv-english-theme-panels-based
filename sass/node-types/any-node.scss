@@ -240,6 +240,7 @@ figcaption {
   }
   #main {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .title_largeScreens {
