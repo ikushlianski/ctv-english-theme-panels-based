@@ -43,6 +43,14 @@
         }
       }
 
+      function checkForAdminMenu() {
+        if ( $("#admin-menu") ) {
+          return $("#admin-menu").height();
+        } else {
+          return false;
+        }
+      }
+
       function checkForStickyMenu() {
         if ( $(".nav-group1-desktop").css("position") == 'fixed' ) {
           return $(".nav-group1-desktop").height();
@@ -64,14 +72,14 @@
           // we scroll below last sidebar elem
           if ( $(window).scrollTop() >= sidebarContentEndY ) {
             // are we inside the main content height minus the height of the last sidebar elem?
-            if ( $(window).scrollTop() < (mainContentEndY - lastSidebarElemHeight - checkForStickyMenu() - checkForToolbar()) ) {
+            if ( $(window).scrollTop() < (mainContentEndY - lastSidebarElemHeight - checkForStickyMenu() - checkForToolbar() - checkForAdminMenu()) ) {
               if ( !lastSidebarElem.hasClass("sticky") ) {
                 // we scroll below it and don't have sticky class
                 lastSidebarElem.addClass("sticky");
                 lastSidebarElem.css({"top": (lastSidebarElem.scrollTop() + checkForStickyMenu() + checkForToolbar() )});
               }
             } else {
-              lastSidebarElem.css({ "top": mainContentEndY - lastSidebarElemHeight - (checkForStickyMenu()*2) - checkForToolbar() });
+              lastSidebarElem.css({ "top": mainContentEndY - lastSidebarElemHeight - (checkForStickyMenu()*2) - checkForToolbar() - checkForAdminMenu()*4 });
               lastSidebarElem.addClass("at-bottom");
             }
           } else {
@@ -80,7 +88,7 @@
           }
 
           if ( $(window).scrollTop() < (mainContentEndY - lastSidebarElemHeight - checkForStickyMenu() - checkForToolbar() ) ) {
-            // we scroll above last sidebar elem and it already has stick class
+            // we scroll above last sidebar elem and it already has sticky class
             // are we inside the main content height?
             // if ( lastSidebarElem.hasClass("sticky") ) {
               if (lastSidebarElem.hasClass("at-bottom")) {
