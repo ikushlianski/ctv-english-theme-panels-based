@@ -785,14 +785,16 @@ th {
 
 .clearfix:before,
 .header:before,
-.tabs:before {
+.tabs:before,
+.tabs-primary:before {
   content: '';
   display: table;
 }
 
 .clearfix:after,
 .header:after,
-.tabs:after {
+.tabs:after,
+.tabs-primary:after {
   content: '';
   display: table;
   clear: both;
@@ -1270,7 +1272,7 @@ span.field-label {
   }
 }
 
-.tabs {
+.tabs, .tabs-primary {
   margin: 1.125rem 0 0;
   line-height: 1.875rem;
   border-bottom: 1px solid #cccccc \0/ie;
@@ -1282,12 +1284,12 @@ span.field-label {
 }
 
 @media print {
-  .tabs {
+  .tabs, .tabs-primary {
     display: none;
   }
 }
 
-.tabs__tab {
+.tabs__tab, .tabs-primary__tab {
   float: left;
   margin: 0 3px;
   border: 1px solid #cccccc;
@@ -1299,15 +1301,15 @@ span.field-label {
   background: #dddddd;
 }
 
-[dir="rtl"] .tabs__tab {
+[dir="rtl"] .tabs__tab, [dir="rtl"] .tabs-primary__tab {
   float: right;
 }
 
-.tabs__tab.is-active {
+.tabs__tab.is-active, .tabs-primary__tab.is-active {
   border-bottom-color: whitesmoke;
 }
 
-.tabs__tab-link {
+.tabs__tab-link, .tabs-primary__tab-link {
   padding: 0 1.5rem;
   display: block;
   text-decoration: none;
@@ -1318,16 +1320,16 @@ span.field-label {
   letter-spacing: 1px;
 }
 
-.tabs__tab-link:focus, .tabs__tab-link:hover {
+.tabs__tab-link:focus, .tabs__tab-link:hover, .tabs-primary__tab-link:focus, .tabs-primary__tab-link:hover {
   background: #eaeaea;
 }
 
-.tabs__tab-link:active, .tabs__tab-link.is-active, .tabs__tab-link--is-active {
+.tabs__tab-link:active, .tabs__tab-link.is-active, .tabs__tab-link--is-active, .tabs-primary__tab-link:active, .tabs-primary__tab-link.is-active, .tabs-primary__tab-link--is-active {
   background: whitesmoke;
   text-shadow: none;
 }
 
-.tabs--off,
+.tabs--off, .tabs-primary--off,
 .views-displays .secondary {
   margin: 0;
   border-bottom: 0;
@@ -1335,32 +1337,32 @@ span.field-label {
   background-image: none;
 }
 
-.tabs--secondary {
+.tabs--secondary, .tabs-primary--secondary {
   margin-top: 1.5rem;
   font-size: 0.875rem;
   background-image: none;
 }
 
-.tabs + .tabs--secondary {
+.tabs + .tabs--secondary, .tabs-primary + .tabs--secondary, .tabs + .tabs-primary--secondary, .tabs-primary + .tabs-primary--secondary {
   margin-top: 0;
   background-image: linear-gradient(to top, #cccccc 1px, transparent 1px);
 }
 
-.tabs--secondary .tabs__tab {
+.tabs--secondary .tabs__tab, .tabs-primary--secondary .tabs__tab, .tabs--secondary .tabs-primary__tab, .tabs-primary--secondary .tabs-primary__tab {
   margin: 0.5625rem 0.1875rem;
   border: 0;
   background: transparent;
 }
 
-[dir="rtl"] .tabs--secondary .tabs__tab {
+[dir="rtl"] .tabs--secondary .tabs__tab, [dir="rtl"] .tabs-primary--secondary .tabs__tab, [dir="rtl"] .tabs--secondary .tabs-primary__tab, [dir="rtl"] .tabs-primary--secondary .tabs-primary__tab {
   float: right;
 }
 
-.tabs--secondary .tabs__tab.is-active {
+.tabs--secondary .tabs__tab.is-active, .tabs-primary--secondary .tabs__tab.is-active, .tabs--secondary .tabs-primary__tab.is-active, .tabs-primary--secondary .tabs-primary__tab.is-active {
   border-bottom-color: transparent;
 }
 
-.tabs--secondary .tabs__tab-link {
+.tabs--secondary .tabs__tab-link, .tabs-primary--secondary .tabs__tab-link, .tabs--secondary .tabs-primary__tab-link, .tabs-primary--secondary .tabs-primary__tab-link {
   border: 1px solid #cccccc;
   border-radius: 24px;
   color: #666666;
@@ -1368,13 +1370,13 @@ span.field-label {
   letter-spacing: normal;
 }
 
-.tabs--secondary .tabs__tab-link:focus, .tabs--secondary .tabs__tab-link:hover {
+.tabs--secondary .tabs__tab-link:focus, .tabs--secondary .tabs__tab-link:hover, .tabs-primary--secondary .tabs__tab-link:focus, .tabs-primary--secondary .tabs__tab-link:hover, .tabs--secondary .tabs-primary__tab-link:focus, .tabs--secondary .tabs-primary__tab-link:hover, .tabs-primary--secondary .tabs-primary__tab-link:focus, .tabs-primary--secondary .tabs-primary__tab-link:hover {
   color: #333333;
   background: #dddddd;
   border-color: #999999;
 }
 
-.tabs--secondary .tabs__tab-link:active, .tabs--secondary .tabs__tab-link.is-active, .tabs--secondary .tabs__tab-link--is-active {
+.tabs--secondary .tabs__tab-link:active, .tabs--secondary .tabs__tab-link.is-active, .tabs--secondary .tabs__tab-link--is-active, .tabs-primary--secondary .tabs__tab-link:active, .tabs-primary--secondary .tabs__tab-link.is-active, .tabs-primary--secondary .tabs__tab-link--is-active, .tabs--secondary .tabs-primary__tab-link:active, .tabs--secondary .tabs-primary__tab-link.is-active, .tabs--secondary .tabs-primary__tab-link--is-active, .tabs-primary--secondary .tabs-primary__tab-link:active, .tabs-primary--secondary .tabs-primary__tab-link.is-active, .tabs-primary--secondary .tabs-primary__tab-link--is-active {
   color: white;
   text-shadow: #333333 0 1px 0;
   background: #666666;
@@ -1442,17 +1444,17 @@ span.field-label {
   padding-bottom: 0em;
 }
 
-#block-views-photo-and-video-default {
+#block-views-photo-and-video-default, #block-views-eng-new-photo-and-video {
   background-color: #555;
   color: whitesmoke;
   margin-top: 0;
 }
 
-#block-views-photo-and-video-default .block__title {
+#block-views-photo-and-video-default .block__title, #block-views-eng-new-photo-and-video .block__title {
   color: whitesmoke;
 }
 
-#block-views-photo-and-video-default a {
+#block-views-photo-and-video-default a, #block-views-eng-new-photo-and-video a {
   color: whitesmoke;
 }
 
@@ -1630,8 +1632,16 @@ span.field-label {
   background-color: transparent;
 }
 
+#block-views-eng-new-front-page-4-editor-s-picks {
+  box-shadow: none;
+}
+
 #block-views-eng-new-front-page-4-editor-s-picks .view .views-field-title a {
   color: whitesmoke;
+}
+
+.page-node #block-views-eng-new-front-page-4-editor-s-picks {
+  margin-left: 1em;
 }
 
 #block-views-front-page-cat-tourism-block .view, #block-views-eng-new-front-page-9-tourism .view {
@@ -1642,10 +1652,6 @@ span.field-label {
   background-color: transparent;
   box-shadow: none;
   margin-top: -1.25em;
-}
-
-#block-views-eng-new-front-page-4-editor-s-picks {
-  box-shadow: none;
 }
 
 .autocomplete,
@@ -2671,10 +2677,6 @@ figcaption a {
   text-decoration: none;
 }
 
-figcaption a:visited {
-  color: grey;
-}
-
 @media (min-width: 768px) {
   figcaption {
     padding: 0em;
@@ -2692,6 +2694,8 @@ figcaption a:visited {
 
 .main > .inside .content {
   flex-basis: 62%;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
 }
 
 @media (max-width: 767px) {
@@ -2748,6 +2752,10 @@ figcaption a:visited {
   width: 100%;
 }
 
+.nodeBody img {
+  width: 100%;
+}
+
 .nodeCategory_largeScreens {
   display: none;
 }
@@ -2785,6 +2793,21 @@ figcaption a:visited {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.pane-node-field-images {
+  background-color: #555;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  -webkit-box-pack: center;
+          justify-content: center;
+  margin-bottom: 1em;
+}
+
+.pane-node-field-images > .field-images {
+  margin: 0.5em;
 }
 
 #page-title {
@@ -3521,12 +3544,16 @@ figcaption a:visited {
   }
   #fp-other-content-wrapper {
     height: 100%;
+    width: 110%;
   }
   #fp-other-content-wrapper #fp-other-content-1 {
     height: 100%;
   }
   #fp-other-content-wrapper #fp-other-content-2 {
     height: 130%;
+  }
+  .pane-ilya-center-eng {
+    width: 100%;
   }
   .recommended-content-wrapper > .inside {
     width: 110%;
@@ -3550,7 +3577,7 @@ figcaption a:visited {
   -webkit-box-pack: center;
           justify-content: center;
   background-color: #333;
-  margin-top: 1em;
+  margin-top: 0.5em;
   padding: 1em;
 }
 
@@ -3899,28 +3926,51 @@ figcaption a:visited {
   padding: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
-  margin-right: -1em;
+  margin-right: -0.75em;
   background-color: #3d5978;
 }
 
 .pane-recommended-from-taxonomy .pane__title {
   margin-left: 1.1em;
   color: whitesmoke;
+  text-align: center;
 }
 
-.view.view-taxonomy-term .view-content, .view.view-recommended-from-taxonomy .view-content, .view.view-taxonomy-term-ilya-test .view-content, .view.view-taxonomy-term-eng .view-content {
+.pane-recommended-from-taxonomy .pane-title {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.pane-recommended-from-taxonomy .view .views-field-title {
+  padding: 1em;
+  padding-left: 0.2em;
+}
+
+.pane-recommended-from-taxonomy .view-display-id-recommended_from_taxonomy .view-content {
+  -webkit-box-pack: center;
+          justify-content: center;
+  margin-right: -0.5em;
+}
+
+.pane-recommended-from-taxonomy .view-display-id-recommended_from_taxonomy .view-content .views-row {
+  -webkit-box-flex: 0;
+          flex-grow: 0;
+  flex-basis: 280px;
+}
+
+.view.view-taxonomy-term .view-content, .view.view-recommended-from-taxonomy .view-content, .view.view-taxonomy-term-ilya-test .view-content, .view.view-taxonomy-term-eng .view-content, .view.view-display-id-taxonomy_term_display .view-content {
   -webkit-box-pack: center;
           justify-content: center;
 }
 
-.view.view-taxonomy-term .view-content .views-row, .view.view-recommended-from-taxonomy .view-content .views-row, .view.view-taxonomy-term-ilya-test .view-content .views-row, .view.view-taxonomy-term-eng .view-content .views-row {
+.view.view-taxonomy-term .view-content .views-row, .view.view-recommended-from-taxonomy .view-content .views-row, .view.view-taxonomy-term-ilya-test .view-content .views-row, .view.view-taxonomy-term-eng .view-content .views-row, .view.view-display-id-taxonomy_term_display .view-content .views-row {
   flex-basis: 280px;
   -webkit-box-flex: 0;
           flex-grow: 0;
   box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-.view.view-taxonomy-term .view-content .views-row .views-field-title, .view.view-recommended-from-taxonomy .view-content .views-row .views-field-title, .view.view-taxonomy-term-ilya-test .view-content .views-row .views-field-title, .view.view-taxonomy-term-eng .view-content .views-row .views-field-title {
+.view.view-taxonomy-term .view-content .views-row .views-field-title, .view.view-recommended-from-taxonomy .view-content .views-row .views-field-title, .view.view-taxonomy-term-ilya-test .view-content .views-row .views-field-title, .view.view-taxonomy-term-eng .view-content .views-row .views-field-title, .view.view-display-id-taxonomy_term_display .view-content .views-row .views-field-title {
   padding: 1em;
   padding-left: 0.2em;
 }

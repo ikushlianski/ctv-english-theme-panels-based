@@ -114,8 +114,16 @@
   background-color: transparent;
 }
 
+#block-views-eng-new-front-page-4-editor-s-picks {
+  box-shadow: none;
+}
+
 #block-views-eng-new-front-page-4-editor-s-picks .view .views-field-title a {
   color: whitesmoke;
+}
+
+.page-node #block-views-eng-new-front-page-4-editor-s-picks {
+  margin-left: 1em;
 }
 
 #block-views-front-page-cat-tourism-block .view, #block-views-eng-new-front-page-9-tourism .view {
@@ -126,10 +134,6 @@
   background-color: transparent;
   box-shadow: none;
   margin-top: -1.25em;
-}
-
-#block-views-eng-new-front-page-4-editor-s-picks {
-  box-shadow: none;
 }
 
 /*# sourceMappingURL=block-modifications.css.map */

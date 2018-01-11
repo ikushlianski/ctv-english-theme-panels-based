@@ -10,28 +10,51 @@
   padding: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
-  margin-right: -1em;
+  margin-right: -0.75em;
   background-color: #3d5978;
 }
 
 .pane-recommended-from-taxonomy .pane__title {
   margin-left: 1.1em;
   color: whitesmoke;
+  text-align: center;
 }
 
-.view.view-taxonomy-term .view-content, .view.view-recommended-from-taxonomy .view-content, .view.view-taxonomy-term-ilya-test .view-content, .view.view-taxonomy-term-eng .view-content {
+.pane-recommended-from-taxonomy .pane-title {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.pane-recommended-from-taxonomy .view .views-field-title {
+  padding: 1em;
+  padding-left: 0.2em;
+}
+
+.pane-recommended-from-taxonomy .view-display-id-recommended_from_taxonomy .view-content {
+  -webkit-box-pack: center;
+          justify-content: center;
+  margin-right: -0.5em;
+}
+
+.pane-recommended-from-taxonomy .view-display-id-recommended_from_taxonomy .view-content .views-row {
+  -webkit-box-flex: 0;
+          flex-grow: 0;
+  flex-basis: 280px;
+}
+
+.view.view-taxonomy-term .view-content, .view.view-recommended-from-taxonomy .view-content, .view.view-taxonomy-term-ilya-test .view-content, .view.view-taxonomy-term-eng .view-content, .view.view-display-id-taxonomy_term_display .view-content {
   -webkit-box-pack: center;
           justify-content: center;
 }
 
-.view.view-taxonomy-term .view-content .views-row, .view.view-recommended-from-taxonomy .view-content .views-row, .view.view-taxonomy-term-ilya-test .view-content .views-row, .view.view-taxonomy-term-eng .view-content .views-row {
+.view.view-taxonomy-term .view-content .views-row, .view.view-recommended-from-taxonomy .view-content .views-row, .view.view-taxonomy-term-ilya-test .view-content .views-row, .view.view-taxonomy-term-eng .view-content .views-row, .view.view-display-id-taxonomy_term_display .view-content .views-row {
   flex-basis: 280px;
   -webkit-box-flex: 0;
           flex-grow: 0;
   box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-.view.view-taxonomy-term .view-content .views-row .views-field-title, .view.view-recommended-from-taxonomy .view-content .views-row .views-field-title, .view.view-taxonomy-term-ilya-test .view-content .views-row .views-field-title, .view.view-taxonomy-term-eng .view-content .views-row .views-field-title {
+.view.view-taxonomy-term .view-content .views-row .views-field-title, .view.view-recommended-from-taxonomy .view-content .views-row .views-field-title, .view.view-taxonomy-term-ilya-test .view-content .views-row .views-field-title, .view.view-taxonomy-term-eng .view-content .views-row .views-field-title, .view.view-display-id-taxonomy_term_display .view-content .views-row .views-field-title {
   padding: 1em;
   padding-left: 0.2em;
 }

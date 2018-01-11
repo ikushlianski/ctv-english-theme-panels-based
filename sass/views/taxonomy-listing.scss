@@ -7,6 +7,7 @@
   }
   & #page-title.title {
     margin-left: 1.5em;
+    // margin-left: 1rem;
   }
 }
 
@@ -14,16 +15,35 @@
   padding: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
-  margin-right: -1em;
+  margin-right: -0.75em;
   background-color: $ctvblue_darker;
   & .pane__title {
     margin-left: 1.1em;
     color: $ctvwhite;
+    text-align: center;
+  }
+  & .pane-title {
+    color: $ctvwhite;
+    text-align: center;
+  }
+  & .view .views-field-title {
+    padding: 1em;
+    padding-left: 0.2em;
+  }
+  & .view-display-id-recommended_from_taxonomy {
+    & .view-content {
+      justify-content: center;
+      margin-right: -0.5em;
+      & .views-row {
+        flex-grow: 0;
+        flex-basis: 280px;
+      }
+    }
   }
 }
 
 .view {
-  &.view-taxonomy-term, &.view-recommended-from-taxonomy, &.view-taxonomy-term-ilya-test, &.view-taxonomy-term-eng {
+  &.view-taxonomy-term, &.view-recommended-from-taxonomy, &.view-taxonomy-term-ilya-test, &.view-taxonomy-term-eng, &.view-display-id-taxonomy_term_display {
     & .view-content {
       justify-content: center;
       // margin-right: -0.5em;

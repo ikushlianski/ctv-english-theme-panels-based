@@ -380,12 +380,16 @@
   }
   #fp-other-content-wrapper {
     height: 100%;
+    width: 110%;
   }
   #fp-other-content-wrapper #fp-other-content-1 {
     height: 100%;
   }
   #fp-other-content-wrapper #fp-other-content-2 {
     height: 130%;
+  }
+  .pane-ilya-center-eng {
+    width: 100%;
   }
   .recommended-content-wrapper > .inside {
     width: 110%;

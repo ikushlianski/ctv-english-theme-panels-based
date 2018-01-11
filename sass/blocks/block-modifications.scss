@@ -101,8 +101,12 @@
 // have to style individual blocks by Id since drupal is not picking up classes from 'block CSS class' field
 #block-views-eng-new-front-page-4-editor-s-picks {
   @extend .block.block_featured;
+  box-shadow: none;
   & .view .views-field-title a {
     color: $ctvwhite;
+  }
+  .page-node & {
+    margin-left: 1em;
   }
 }
 
@@ -126,6 +130,5 @@
 }
 
 #block-views-eng-new-front-page-4-editor-s-picks {
-  // margin-left: 1em;
-  box-shadow: none;
+
 }

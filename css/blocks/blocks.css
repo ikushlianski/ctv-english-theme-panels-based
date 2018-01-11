@@ -59,17 +59,17 @@
   padding-bottom: 0em;
 }
 
-#block-views-photo-and-video-default {
+#block-views-photo-and-video-default, #block-views-eng-new-photo-and-video {
   background-color: #555;
   color: whitesmoke;
   margin-top: 0;
 }
 
-#block-views-photo-and-video-default .block__title {
+#block-views-photo-and-video-default .block__title, #block-views-eng-new-photo-and-video .block__title {
   color: whitesmoke;
 }
 
-#block-views-photo-and-video-default a {
+#block-views-photo-and-video-default a, #block-views-eng-new-photo-and-video a {
   color: whitesmoke;
 }
 
