@@ -99,6 +99,9 @@ figcaption {
   & img {
     width: 100%;
   }
+  & a {
+    text-decoration: underline;
+  }
 }
 .nodeCategory {
   &_largeScreens {

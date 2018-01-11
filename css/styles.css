@@ -2756,6 +2756,10 @@ figcaption a {
   width: 100%;
 }
 
+.nodeBody a {
+  text-decoration: underline;
+}
+
 .nodeCategory_largeScreens {
   display: none;
 }
