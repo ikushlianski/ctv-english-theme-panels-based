@@ -16,6 +16,7 @@ li.attached-block a {
         margin: 0;
         top: 1.7em;
         max-width: 1248px;
+        width: 100%;
       }
     }
   }
@@ -27,5 +28,10 @@ li.attached-block a {
   }
   & .view-content {
     justify-content: center;
+  }
+  & .views-row {
+    flex-basis: 20%;
+    margin: 0 0.5em;
+    flex-grow: 1;
   }
 }

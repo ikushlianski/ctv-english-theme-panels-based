@@ -21,6 +21,7 @@ li.attached-block a {
     margin: 0;
     top: 1.7em;
     max-width: 1248px;
+    width: 100%;
   }
 }
 
@@ -32,6 +33,13 @@ li.attached-block a {
 .menu-attach-block-wrapper.orientation-horizontal .view-content {
   -webkit-box-pack: center;
           justify-content: center;
+}
+
+.menu-attach-block-wrapper.orientation-horizontal .views-row {
+  flex-basis: 20%;
+  margin: 0 0.5em;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
 }
 
 /*# sourceMappingURL=megamenu.css.map */

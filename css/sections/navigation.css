@@ -173,6 +173,10 @@
           flex-grow: 1;
 }
 
+.nav-group1-desktop > .menu li {
+  white-space: nowrap;
+}
+
 .nav-group2-desktop {
   height: 3em;
   margin: 0 auto;
