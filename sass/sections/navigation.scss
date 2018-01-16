@@ -144,8 +144,10 @@
     margin-right: 2em;
     flex-basis: 40%;
     flex-grow: 1;
-    & li {
-      white-space: nowrap;
+    & > li {
+      & > a {
+        white-space: nowrap;
+      }
     }
   }
 }

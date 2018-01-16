@@ -2457,7 +2457,7 @@ twitterwidget {
           flex-grow: 1;
 }
 
-.nav-group1-desktop > .menu li {
+.nav-group1-desktop > .menu > li > a {
   white-space: nowrap;
 }
 
