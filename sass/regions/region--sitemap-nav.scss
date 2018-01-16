@@ -41,6 +41,23 @@
         }
       }
     }
+    & .pane-menu-menu-full-site-navigation-menu-e {
+      width: 75%;
+      & .menu {
+        display: flex;
+        justify-content: space-around;
+        padding-left: 0;
+        flex-wrap: wrap;
+        & > .menu__item.is-expanded {
+          margin: 1em;
+          flex-basis: 25%;
+          & .menu {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+    }
     & .pane-menu-menu-full-site-navigation-menu {
       flex-basis: 33.333333%;
       flex-shrink: 0;

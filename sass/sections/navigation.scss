@@ -139,14 +139,14 @@
     font-weight: bold;
     display: flex;
   }
-  & .menu {
+  & > .menu {
     margin-left: 2em;
     margin-right: 2em;
     flex-basis: 40%;
     flex-grow: 1;
-    & li {
-      white-space: nowrap;
-    }
+    // & li {
+    //   white-space: nowrap;
+    // }
   }
 }
 .nav-group2-desktop {

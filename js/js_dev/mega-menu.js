@@ -14,39 +14,39 @@
 
   $(document).ready(function(){
 
-    $(".menu-attach-block-wrapper").width($(".nav-menu-div").first().width());
+    // $(".menu-attach-block-wrapper").width($(".nav-menu-div").first().width());
 
-    $(window).resize(function(){
-      let targetSize = $(".nav-menu-div").first().width();
-      $(".menu-attach-block-wrapper").width(targetSize);
-      let pdleft = $(".menu-attach-block-wrapper").find(".block").css("paddingLeft");
-      let pdright = $(".menu-attach-block-wrapper").find(".block").css("paddingRight");
-      $(".menu-attach-block-wrapper").find(".block").width(targetSize - pdleft - pdright);
-
-    });
+    // $(window).resize(function(){
+    //   let targetSize = $(".nav-group1-desktop").first().width();
+    //   $(".menu-attach-block-wrapper").width(targetSize);
+    //   let pdleft = $(".menu-attach-block-wrapper").find(".block").css("paddingLeft");
+    //   let pdright = $(".menu-attach-block-wrapper").find(".block").css("paddingRight");
+    //   $(".menu-attach-block-wrapper").find(".block").width(targetSize - pdleft - pdright);
+    //
+    // });
 
     var timer;
 
-    $("a.attached-block").on("mouseenter", function() {
+    $(".nav-group1-desktop > .menu > .menu__item > a").on("mouseenter", function() {
       clearTimeout(timer);
-      $(this).parent(".attached-block").siblings().each(function(){
+      $(this).parent(".menu__item").siblings().each(function(){
         $(this).find(".menu-attach-block-wrapper").removeClass("open");
       });
       openSubmenu($(this));
 
       // resize images inside megamenu
-      if ( Modernizr.objectfit ) {
-        let thisBlockImgWidth = $(this).siblings(".menu-attach-block-wrapper").children(".block").find('img').first().width();
-        $(this).siblings(".menu-attach-block-wrapper").children(".block").find('img').first().height(thisBlockImgWidth/16*9);
-        let thisBlockImgHeight = $(this).siblings(".menu-attach-block-wrapper").children(".block").find('img').first().height();
-
-        $(this).siblings(".menu-attach-block-wrapper").children(".block").find('img').each(function(item){
-          $(this).height(thisBlockImgWidth/16*9);
-        });
-      }
+      // if ( Modernizr.objectfit ) {
+      //   let thisBlockImgWidth = $(this).siblings(".menu-attach-block-wrapper").children(".block").find('img').first().width();
+      //   $(this).siblings(".menu-attach-block-wrapper").children(".block").find('img').first().height(thisBlockImgWidth/16*9);
+      //   let thisBlockImgHeight = $(this).siblings(".menu-attach-block-wrapper").children(".block").find('img').first().height();
+      //
+      //   $(this).siblings(".menu-attach-block-wrapper").children(".block").find('img').each(function(item){
+      //     $(this).height(thisBlockImgWidth/16*9);
+      //   });
+      // }
     });
 
-    $("a.attached-block").on("mouseleave", function() {
+    $(".nav-group1-desktop > .menu > .menu__item > a").on("mouseleave", function() {
         let self = $(this);
         timer = setTimeout(function(){
           closeSubmenu(self)
