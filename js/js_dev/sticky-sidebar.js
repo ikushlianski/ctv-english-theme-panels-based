@@ -59,6 +59,14 @@
         }
       }
 
+      function checkForStatus() {
+        let statusHeight = 0;
+        $(".status").each(function(){
+          statusHeight += $(this).height();
+        });
+        return statusHeight === 0 ? false : statusHeight;
+      }
+
       if (mainContentHeight < sidebarContentInitHeight) {
         while (mainContentHeight < sidebar.height()) {
           sidebar.find(".block").last().hide();
@@ -79,7 +87,7 @@
                 lastSidebarElem.css({"top": (lastSidebarElem.scrollTop() + checkForStickyMenu() + checkForToolbar() )});
               }
             } else {
-              lastSidebarElem.css({ "top": mainContentEndY - lastSidebarElemHeight - (checkForStickyMenu()*2) - checkForToolbar() - checkForAdminMenu()*4 });
+              lastSidebarElem.css({ "top": mainContentEndY - lastSidebarElemHeight - (checkForStickyMenu()*2) - checkForToolbar() - checkForAdminMenu()*4 - checkForStatus() });
               lastSidebarElem.addClass("at-bottom");
             }
           } else {
