@@ -44,6 +44,7 @@
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-bottom: 1.5rem;
+  padding-top: 0.5em;
 }
 
 .logo_lang.toggled-on {
@@ -262,11 +263,6 @@
 .secondary_menu_wrapper .toggle_largeScreens {
   padding: 0.25em;
   cursor: pointer;
-}
-
-.secondary_menu_wrapper .logo_lang {
-  width: 44px;
-  height: 44px;
 }
 
 .site-brand-header {

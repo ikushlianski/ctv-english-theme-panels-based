@@ -325,6 +325,10 @@
   display: none;
 }
 
+.sidebar-first {
+  position: relative;
+}
+
 .sidebar-first > .inside .block-views {
   margin-left: 0;
   margin-right: 0;

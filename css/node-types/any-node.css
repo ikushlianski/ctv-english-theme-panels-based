@@ -101,6 +101,10 @@ figcaption a {
   }
 }
 
+.messages.status {
+  margin: 1em 0;
+}
+
 .nodeBody iframe {
   position: relative;
   width: 100%;

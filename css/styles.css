@@ -2328,6 +2328,7 @@ twitterwidget {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-bottom: 1.5rem;
+  padding-top: 0.5em;
 }
 
 .logo_lang.toggled-on {
@@ -2548,11 +2549,6 @@ twitterwidget {
   cursor: pointer;
 }
 
-.secondary_menu_wrapper .logo_lang {
-  width: 44px;
-  height: 44px;
-}
-
 .site-brand-header {
   line-height: normal;
   padding: 1em 0.5em;
@@ -2749,6 +2745,10 @@ figcaption a {
   .metaAndImage {
     margin: 0;
   }
+}
+
+.messages.status {
+  margin: 1em 0;
 }
 
 .nodeBody iframe {
@@ -3496,6 +3496,10 @@ figcaption a {
 
 #sidebar-first, #sidebar-recommended, #fp-sidebar {
   display: none;
+}
+
+.sidebar-first {
+  position: relative;
 }
 
 .sidebar-first > .inside .block-views {

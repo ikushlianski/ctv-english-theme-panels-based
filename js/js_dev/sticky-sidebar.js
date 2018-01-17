@@ -87,7 +87,7 @@
                 lastSidebarElem.css({"top": (lastSidebarElem.scrollTop() + checkForStickyMenu() + checkForToolbar() )});
               }
             } else {
-              lastSidebarElem.css({ "top": mainContentEndY - lastSidebarElemHeight - (checkForStickyMenu()*2) - checkForToolbar() - checkForAdminMenu()*4 - checkForStatus() });
+              lastSidebarElem.css({ "top": mainContentEndY - lastSidebarElemHeight - (checkForStickyMenu()*2) - checkForToolbar() - checkForAdminMenu()*4 - checkForStatus()*2 });
               lastSidebarElem.addClass("at-bottom");
             }
           } else {

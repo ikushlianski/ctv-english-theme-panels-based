@@ -40,6 +40,7 @@
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-bottom: 1.5rem;
+  padding-top: 0.5em;
   &.toggled-on {
     display: inline-block;
     display: block;
@@ -223,10 +224,10 @@
     padding: 0.25em;
     cursor: pointer;
   }
-  & .logo_lang {
-    width: 44px;
-    height: 44px;
-  }
+  // & .logo_lang {
+  //   width: 44px;
+  //   height: 44px;
+  // }
 }
 
 .site-brand-header {
