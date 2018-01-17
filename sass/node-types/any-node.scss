@@ -90,6 +90,9 @@ figcaption {
     margin: 0;
   }
 }
+.messages.status {
+  margin: 1em 0;
+}
 .nodeBody {
   //margin-bottom: 2em;
   & iframe {
@@ -118,7 +121,8 @@ figcaption {
   margin-top: 0em;
   margin-bottom: -1em;
   @media (min-width: 768px) {
-    padding: 1em 0;
+    padding: 0em 0;
+    margin: 1em 0;
   }
 }
 

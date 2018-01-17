@@ -133,7 +133,8 @@ figcaption a {
 
 @media (min-width: 768px) {
   .nodeMeta {
-    padding: 1em 0;
+    padding: 0em 0;
+    margin: 1em 0;
   }
 }
 

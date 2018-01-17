@@ -1640,7 +1640,7 @@ span.field-label {
   color: whitesmoke;
 }
 
-.page-node #block-views-eng-new-front-page-4-editor-s-picks {
+.node-type-engarticle #block-views-eng-new-front-page-4-editor-s-picks {
   margin-left: 1em;
 }
 
@@ -2783,7 +2783,8 @@ figcaption a {
 
 @media (min-width: 768px) {
   .nodeMeta {
-    padding: 1em 0;
+    padding: 0em 0;
+    margin: 1em 0;
   }
 }
 
