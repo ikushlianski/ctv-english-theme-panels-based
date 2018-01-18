@@ -118,6 +118,10 @@ figcaption a {
   text-decoration: underline;
 }
 
+.nodeBody h2, .nodeBody h1, .nodeBody h3, .nodeBody h4 {
+  line-height: normal;
+}
+
 .nodeCategory_largeScreens {
   display: none;
 }

@@ -105,6 +105,9 @@ figcaption {
   & a {
     text-decoration: underline;
   }
+  & h2, & h1, & h3, & h4 {
+    line-height: normal;
+  }
 }
 .nodeCategory {
   &_largeScreens {

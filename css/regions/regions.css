@@ -99,6 +99,8 @@
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 767px) {
@@ -208,8 +210,8 @@
 .region-fp-media .block:last-child .views-row {
   flex-basis: 150px;
   margin-right: 1em;
-  -webkit-box-flex: 0;
-          flex-grow: 0;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
 }
 
 @media (min-width: 768px) {
@@ -217,6 +219,10 @@
     -webkit-box-flex: 1;
             flex-grow: 1;
   }
+}
+
+.region-fp-media .block:last-child .views-row img {
+  width: 100%;
 }
 
 #fp-other-content-1 {

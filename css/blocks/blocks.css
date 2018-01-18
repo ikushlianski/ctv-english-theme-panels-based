@@ -14,7 +14,7 @@
 
 .block-views .block__title a, .block-views .pane__title a {
   color: #ef5223;
-  text-decoration: none;
+  text-decoration: underline;
   transition: color 0.3s;
 }
 

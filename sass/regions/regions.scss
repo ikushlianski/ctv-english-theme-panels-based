@@ -100,6 +100,7 @@
   margin-bottom: 1em;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   @media (max-width: 767px) {
     margin-left: -1em;
     margin-right: -1em;
@@ -181,9 +182,12 @@
       & .views-row {
         flex-basis: 150px;
         margin-right: 1em;
-        flex-grow: 0;
+        flex-grow: 1;
         @media (min-width: 768px) {
           flex-grow: 1;
+        }
+        & img {
+          width: 100%;
         }
       }
     }
