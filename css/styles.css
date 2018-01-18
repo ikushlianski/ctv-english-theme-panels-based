@@ -1654,6 +1654,14 @@ span.field-label {
   margin-top: -1.25em;
 }
 
+#block-views-more-from-same-story-block .view-content, #block-views-eng-new-more-from-same-theme .view-content, #block-views-eng-new-more-from-same-person .view-content, #block-views-eng-new-more-from-same-story .view-content {
+  margin: -0.5em;
+}
+
+#block-views-more-from-same-story-block .view-content .views-row, #block-views-eng-new-more-from-same-theme .view-content .views-row, #block-views-eng-new-more-from-same-person .view-content .views-row, #block-views-eng-new-more-from-same-story .view-content .views-row {
+  margin: 0.5em;
+}
+
 .autocomplete,
 .form-autocomplete {
   background-image: url(../sass/forms/autocomplete/throbber-inactive.png);
@@ -3974,7 +3982,8 @@ figcaption a {
   padding: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
-  margin-right: -0.75em;
+  margin-right: -0.25em;
+  margin-left: 0.25em;
   background-color: #3d5978;
 }
 
@@ -4029,11 +4038,11 @@ figcaption a {
 
 .view-taxonomy-listing {
   padding: 0em;
-  margin: 0 0em 0 1em;
+  margin: 0 -1em 0 0em;
 }
 
 .view-taxonomy-listing .view-content {
-  margin-right: -0.5em;
+  margin-right: 0em;
 }
 
 .view-recommended-from-taxonomy {

@@ -136,4 +136,12 @@
   margin-top: -1.25em;
 }
 
+#block-views-more-from-same-story-block .view-content, #block-views-eng-new-more-from-same-theme .view-content, #block-views-eng-new-more-from-same-person .view-content, #block-views-eng-new-more-from-same-story .view-content {
+  margin: -0.5em;
+}
+
+#block-views-more-from-same-story-block .view-content .views-row, #block-views-eng-new-more-from-same-theme .view-content .views-row, #block-views-eng-new-more-from-same-person .view-content .views-row, #block-views-eng-new-more-from-same-story .view-content .views-row {
+  margin: 0.5em;
+}
+
 /*# sourceMappingURL=block-modifications.css.map */

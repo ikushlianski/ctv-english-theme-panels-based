@@ -132,3 +132,11 @@
 #block-views-eng-new-front-page-4-editor-s-picks {
 
 }
+#block-views-more-from-same-story-block, #block-views-eng-new-more-from-same-theme, #block-views-eng-new-more-from-same-person, #block-views-eng-new-more-from-same-story {
+  & .view-content {
+    margin: -0.5em;
+    & .views-row {
+      margin: 0.5em;
+    }
+  }
+}

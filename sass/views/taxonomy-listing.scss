@@ -15,7 +15,8 @@
   padding: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
-  margin-right: -0.75em;
+  margin-right: -0.25em;
+  margin-left: 0.25em;
   background-color: $ctvblue_darker;
   & .pane__title {
     margin-left: 1.1em;
@@ -64,9 +65,9 @@
 }
 .view-taxonomy-listing {
   padding: 0em;
-  margin: 0 0em 0 1em;
+  margin: 0 -1em 0 0em;
   & .view-content {
-    margin-right: -0.5em;
+    margin-right: 0em;
   }
 }
 
