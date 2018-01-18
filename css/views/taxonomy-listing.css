@@ -59,6 +59,10 @@
   padding-left: 0.2em;
 }
 
+.view.view-taxonomy-term .view-content .views-row .views-field-field-image, .view.view-recommended-from-taxonomy .view-content .views-row .views-field-field-image, .view.view-taxonomy-term-ilya-test .view-content .views-row .views-field-field-image, .view.view-taxonomy-term-eng .view-content .views-row .views-field-field-image, .view.view-display-id-taxonomy_term_display .view-content .views-row .views-field-field-image {
+  width: 100%;
+}
+
 .view-taxonomy-listing {
   padding: 0em;
   margin: 0 0em 0 1em;
