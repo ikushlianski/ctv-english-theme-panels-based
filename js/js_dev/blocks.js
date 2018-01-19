@@ -15,12 +15,12 @@
     function hideBlocksWithOneResult(...blockclass) {
 			let args = Array.prototype.slice.apply(arguments);
 			args.forEach(function(item){
-				if( $(`.block .${item} .views-row`).length < 2 ) {
-	        $(`.${item}`).parents('.block').hide();
+				if( $(`.${item} .views-row`).length < 2 ) {
+	        $(`.${item}`).find('.field-image').hide();
 	      }
 			});
     }
-    hideBlocksWithOneResult('view-more-from-same-story', 'view-more-from-same-theme', 'view-more-from-same-person');
+    hideBlocksWithOneResult('view-display-id-more_from_same_person', 'view-display-id-more_from_same_theme', 'view-display-id-more_from_same_story');
 
     // standard fix to remove dangling last flex items
     function fixLastFlexItemBug(itemClass, parentClass){
