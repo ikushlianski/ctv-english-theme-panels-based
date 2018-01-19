@@ -3276,6 +3276,7 @@ figcaption a {
 }
 
 .region-fp-three-submain-sections > * {
+  display: inline-block;
   flex-basis: 300px;
   -webkit-box-flex: 1;
           flex-grow: 1;
@@ -3421,6 +3422,7 @@ figcaption a {
 }
 
 #fp-other-content-1 > * {
+  display: inline-block;
   -webkit-box-flex: 1;
           flex-grow: 1;
 }
@@ -3444,6 +3446,7 @@ figcaption a {
 }
 
 #fp-other-content-2 > * {
+  display: inline-block;
   -webkit-box-flex: 1;
           flex-grow: 1;
 }
@@ -4069,8 +4072,8 @@ figcaption a {
 }
 
 .view.smallImg .view-content .views-row {
-  display: -webkit-box;
-  display: flex;
+  display: -webkit-inline-box;
+  display: inline-flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
           flex-direction: row;

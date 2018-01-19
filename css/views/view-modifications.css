@@ -8,8 +8,8 @@
 }
 
 .view.smallImg .view-content .views-row {
-  display: -webkit-box;
-  display: flex;
+  display: -webkit-inline-box;
+  display: inline-flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
           flex-direction: row;

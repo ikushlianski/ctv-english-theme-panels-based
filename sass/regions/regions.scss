@@ -82,6 +82,7 @@
   margin-right: -0.5em;
   // padding: 0 1em;
   > * {
+    display: inline-block;
     flex-basis: 300px;
     flex-grow: 1;
     // padding-top: 1em;
@@ -198,6 +199,7 @@
   display: flex;
   flex-wrap: wrap;
   & > * {
+    display: inline-block;
     flex-grow: 1;
   }
   & #block-views-eng-new-front-page-9-tourism {
@@ -217,6 +219,7 @@
   display: flex;
   flex-wrap: wrap;
   & > * {
+    display: inline-block;
     flex-grow: 1;
   }
   & #block-views-eng-new-front-page-8-information-technologies {

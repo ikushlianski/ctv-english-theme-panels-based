@@ -87,6 +87,7 @@
 }
 
 .region-fp-three-submain-sections > * {
+  display: inline-block;
   flex-basis: 300px;
   -webkit-box-flex: 1;
           flex-grow: 1;
@@ -232,6 +233,7 @@
 }
 
 #fp-other-content-1 > * {
+  display: inline-block;
   -webkit-box-flex: 1;
           flex-grow: 1;
 }
@@ -255,6 +257,7 @@
 }
 
 #fp-other-content-2 > * {
+  display: inline-block;
   -webkit-box-flex: 1;
           flex-grow: 1;
 }

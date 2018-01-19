@@ -16,7 +16,7 @@
   &.smallImg {
     & .view-content {
       & .views-row {
-        display: flex;
+        display: inline-flex;
         flex-direction: row;
         background-color: transparent;
         box-shadow: none;
