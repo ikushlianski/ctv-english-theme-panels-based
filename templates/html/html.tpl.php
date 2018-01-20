@@ -52,6 +52,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name='robots' content='index,follow' />
+  <link rel="stylesheet" type="text/css" media="handheld" href="/sites/all/themes/ctvenglishtheme2prod/css/styles.css">
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
 
