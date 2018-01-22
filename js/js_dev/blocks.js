@@ -44,9 +44,9 @@
 				});
 			}
 		}
-    fixLastFlexItemBug('views-row', 'view-more-from-same-theme');
-    fixLastFlexItemBug('views-row', 'view-more-from-same-story');
-    fixLastFlexItemBug('views-row', 'view-more-from-same-person');
+    fixLastFlexItemBug('views-row', 'view-display-id-more_from_same_theme');
+    fixLastFlexItemBug('views-row', 'view-display-id-more_from_same_story');
+    fixLastFlexItemBug('views-row', 'view-display-id-more_from_same_person');
 
 
     // hide last elements in sidebar_recommended until it's shorter than content_recommended
