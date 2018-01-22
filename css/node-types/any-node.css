@@ -111,7 +111,7 @@ figcaption a {
 }
 
 .nodeBody img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .nodeBody a {

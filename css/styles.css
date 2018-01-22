@@ -2195,6 +2195,10 @@ li.attached-block a {
   display: block;
 }
 
+.menu-attach-block-wrapper .block__title {
+  margin-left: 0.5rem;
+}
+
 .menu-attach-block-wrapper.orientation-horizontal {
   display: none;
 }
@@ -2765,7 +2769,7 @@ figcaption a {
 }
 
 .nodeBody img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .nodeBody a {
