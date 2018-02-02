@@ -72,12 +72,17 @@
       display: none;
     }
     .menu__item.is-expanded {
-      > a {
-        font-size: 1.4em;
+      > .menu__link {
+        // font-size: 1.4em;
+        // font-weight: bold;
+        // border-bottom: 1px solid $ctvorange;
+        // // color: $ctvtext;
+        // text-decoration: none;
+        font-size: 1.2em;
         font-weight: bold;
-        border-bottom: 1px solid $ctvorange;
-        // color: $ctvtext;
+        border-bottom: 1px solid #ef5223;
         text-decoration: none;
+        color: $ctvblue_darker;
       }
       .menu {
         padding: 0em;

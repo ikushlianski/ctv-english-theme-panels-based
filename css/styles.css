@@ -2825,7 +2825,7 @@ figcaption a {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
-  padding: 1em;
+  padding: 2.25em;
   -webkit-box-pack: center;
           justify-content: center;
   margin-bottom: 1em;
@@ -3859,11 +3859,12 @@ figcaption a {
   .region-sitemap-nav.toggled-on .block__title {
     display: none;
   }
-  .region-sitemap-nav.toggled-on .menu__item.is-expanded > a {
-    font-size: 1.4em;
+  .region-sitemap-nav.toggled-on .menu__item.is-expanded > .menu__link {
+    font-size: 1.2em;
     font-weight: bold;
     border-bottom: 1px solid #ef5223;
     text-decoration: none;
+    color: #3d5978;
   }
   .region-sitemap-nav.toggled-on .menu__item.is-expanded .menu {
     padding: 0em;
