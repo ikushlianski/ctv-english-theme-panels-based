@@ -6,6 +6,11 @@
   margin-left: 1.5em;
 }
 
+.page-taxonomy-term.page-taxonomy-term-4314755 #page-title.title, .page-taxonomy-term.page-taxonomy-term-4314753 #page-title.title {
+  margin-left: 0em;
+  text-align: center;
+}
+
 .pane-recommended-from-taxonomy {
   padding: 1em;
   margin-top: 1em;

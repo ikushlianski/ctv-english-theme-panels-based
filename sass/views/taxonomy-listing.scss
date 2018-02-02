@@ -9,6 +9,12 @@
     margin-left: 1.5em;
     // margin-left: 1rem;
   }
+  &.page-taxonomy-term-4314755, &.page-taxonomy-term-4314753 {
+    & #page-title.title {
+      margin-left: 0em;
+      text-align: center;
+    }
+  }
 }
 
 .pane-recommended-from-taxonomy {

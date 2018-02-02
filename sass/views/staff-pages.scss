@@ -1,0 +1,60 @@
+@import 'init/customcolors';
+@import 'init/custom-mixins';
+
+.view-eng-new-rukovodstvo, .view-eng-new-litsa-kanala {
+  & > .view-content {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  & .views-row {
+    @include boxShadow;
+    padding: 1em;
+    padding-top: 0;
+    margin: 1em 0;
+    overflow: auto;
+    & .views-field-title {
+      margin: 0 -1em 1em;
+      padding: 1em;
+      background: $ctvblue;
+      color: whitesmoke;
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 1px 1px rgba(0,0,0,0.2);
+      border-bottom: 3px solid $ctvblue_darker;
+    }
+    & .views-field-field-image {
+      float: left;
+      margin-right: 1em;
+      @include boxShadow;
+      pointer-events: none;
+      padding: 0.5em;
+      & img {
+        border: 1px solid whitesmoke;
+        @media (max-width: 450px) {
+          border: none;
+          width: 150px;
+          margin: 0 auto;
+        }
+      }
+      @media (max-width: 450px) {
+        float: none;
+        box-shadow: none;
+        padding: none;
+      }
+    }
+    & .views-field-body {
+      & p:first-child {
+        margin-top: 0;
+      }
+      & p {
+        margin: 0.5em 0;
+        font-size: 0.95em;
+        line-height: normal;
+      }
+    }
+  }
+}
