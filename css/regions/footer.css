@@ -28,6 +28,14 @@
   flex-wrap: wrap;
 }
 
+.footer-content .main-menu-footer:first-child {
+  padding-bottom: 0;
+}
+
+.footer-content .main-menu-footer.secondary-footer-menu {
+  border-bottom: none;
+}
+
 .footer-content .main-menu-footer .menu {
   display: -webkit-box;
   display: flex;
@@ -163,6 +171,38 @@
 .site-author a {
   color: #999;
   text-decoration: underline;
+}
+
+.sitemap-nav-secondary-menu {
+  flex-basis: 100%;
+  -webkit-box-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+}
+
+.sitemap-nav-secondary-menu .menu {
+  display: -webkit-box;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.sitemap-nav-secondary-menu .menu li {
+  padding: 0.5em;
+}
+
+.sitemap-nav-secondary-menu .menu a {
+  font-size: 0.95em;
+}
+
+.sitemap-nav-secondary-menu .menu a:hover {
+  color: #ef5223;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=footer.css.map */

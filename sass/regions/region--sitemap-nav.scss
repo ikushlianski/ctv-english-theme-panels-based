@@ -14,7 +14,7 @@
     background-color: transparentize($ctvwhite, 0.05);
     overflow: scroll; // for all browsers
     //overflow: overlay; // for Chrome, Opera and Safari (better appearance)
-    padding: 1em 10em 5em;
+    padding: 5em 5em 10em;
     @media (max-width: 1024px) {
       padding: 1em 1em;
     }

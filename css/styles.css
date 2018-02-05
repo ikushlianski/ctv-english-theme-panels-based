@@ -3635,6 +3635,14 @@ figcaption a {
   flex-wrap: wrap;
 }
 
+.footer-content .main-menu-footer:first-child {
+  padding-bottom: 0;
+}
+
+.footer-content .main-menu-footer.secondary-footer-menu {
+  border-bottom: none;
+}
+
 .footer-content .main-menu-footer .menu {
   display: -webkit-box;
   display: flex;
@@ -3772,6 +3780,38 @@ figcaption a {
   text-decoration: underline;
 }
 
+.sitemap-nav-secondary-menu {
+  flex-basis: 100%;
+  -webkit-box-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+}
+
+.sitemap-nav-secondary-menu .menu {
+  display: -webkit-box;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.sitemap-nav-secondary-menu .menu li {
+  padding: 0.5em;
+}
+
+.sitemap-nav-secondary-menu .menu a {
+  font-size: 0.95em;
+}
+
+.sitemap-nav-secondary-menu .menu a:hover {
+  color: #ef5223;
+  text-decoration: none;
+}
+
 .region-sitemap-nav {
   display: none;
 }
@@ -3786,7 +3826,7 @@ figcaption a {
     align-self: stretch;
     background-color: rgba(245, 245, 245, 0.95);
     overflow: scroll;
-    padding: 1em 10em 5em;
+    padding: 5em 5em 10em;
     width: 100%;
     height: 100vh;
     z-index: 10;
