@@ -28,12 +28,9 @@
   flex-wrap: wrap;
 }
 
-.footer-content .main-menu-footer:first-child {
-  padding-bottom: 0;
-}
-
 .footer-content .main-menu-footer.secondary-footer-menu {
   border-bottom: none;
+  padding-top: 1em;
 }
 
 .footer-content .main-menu-footer .menu {

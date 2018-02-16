@@ -134,3 +134,41 @@
     }
   }
 }
+
+// Google search
+.gsearch-desktop {
+
+  & input.gsc-search-button {
+    padding: 5px 19px!important;
+    height: 26px!important;
+    min-width: 53px!important;
+  }
+  & div#___gcse_0 {
+      width: 25%;
+      margin: 0 auto;
+  }
+  & .gsc-control-cse {
+    background-color: transparent;
+    border: none;
+  }
+  & .gsc-search-box {
+    & tbody {
+      border: none;
+      & tr {
+        border: none;
+      }
+    }
+  }
+  & .gsc-input-box * {
+    padding: 0;
+  }
+  & .gsc-input-box {
+    & > table {
+      margin: 0;
+    }
+  }
+  & .gsc-results-wrapper-overlay {
+    margin: 10em auto 2em;
+    width: 75%;
+  }
+}
