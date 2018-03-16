@@ -15,6 +15,7 @@
     overflow: scroll; // for all browsers
     //overflow: overlay; // for Chrome, Opera and Safari (better appearance)
     padding: 5em 5em 10em;
+    top: 5em;
     @media (max-width: 1024px) {
       padding: 1em 1em;
     }
@@ -171,4 +172,15 @@
     margin: 10em auto 2em;
     width: 75%;
   }
+}
+// google search icon on button
+.gsc-search-button::after {
+    content: '\f002';
+    font-family: fontawesome;
+    position: absolute;
+    color: white;
+    margin-left: -2.2em;
+    font-size: 1.25em;
+    margin-top: 0.4em;
+    pointer-events: none;
 }

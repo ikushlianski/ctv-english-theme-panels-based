@@ -247,6 +247,19 @@
   display: block;
 }
 
+.nav-group-mobile.toggled-on .social-links {
+  display: block;
+  padding: 0 1.5rem;
+}
+
+.nav-group-mobile.toggled-on .social-links a {
+  margin-right: 0.5em;
+}
+
+.nav-group-mobile .social-links {
+  display: none;
+}
+
 .secondary_menu_wrapper {
   display: -webkit-box;
   display: flex;
@@ -321,6 +334,23 @@
     -webkit-box-align: center;
             align-items: center;
   }
+}
+
+.nav-group-mobile.toggled-on .gsearch-mobile {
+  display: block;
+}
+
+.nav-group-mobile .gsearch-mobile {
+  display: none;
+}
+
+.gsearch-mobile .gsc-control-cse.gsc-control-cse-en {
+  padding: 0 1.5rem;
+}
+
+.gsearch-mobile .gsc-results-wrapper-overlay {
+  width: 97%;
+  margin: 10em -4em;
 }
 
 /*# sourceMappingURL=navigation.css.map */
